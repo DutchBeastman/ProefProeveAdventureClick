@@ -46,6 +46,7 @@ namespace Utils
 		protected virtual void OnClick()
 		{
 			Debug.Log("clicking");
+			isClicked = true;
 		}
 	}
 }
