@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-public static class ClickUtils {
-
-	public static bool AreaContainsClick(Bounds area, Vector2 mousePosition) 
+namespace Utils
+{
+	public static class ClickUtils
 	{
-		if(Input.GetMouseButton(0))
+
+		public static bool AreaContainsClick(Bounds area , Vector2 mousePosition)
 		{
-			if(area.Contains(mousePosition))
+			if (Input.GetMouseButton(0))
 			{
-				return true;
+				if (area.Contains(mousePosition))
+				{
+					return true;
+				}
 			}
+			return false;
 		}
-		return false;
 	}
 }

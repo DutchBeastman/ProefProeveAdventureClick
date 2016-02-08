@@ -1,34 +1,51 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Click : MonoBehaviour {
-
-	// Use this for initialization
-	[SerializeField]private Collider2D clickArea;
-	[SerializeField]private bool isClicked;
-	
-	// Update is called once per frame
-	protected virtual void Update ()
+namespace Utils
+{
+	public class Click : MonoBehaviour
 	{
-		if(Input.GetMouseButton(0)) 
+
+		// Use this for initialization
+		[SerializeField]
+		private Collider2D clickArea;
+		[SerializeField]
+		private bool isClicked;
+
+		protected void OnDisable()
 		{
-			Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-			if (clickArea != null)
+			OnClickRelease();
+		}
+		// Update is called once per frame
+		protected virtual void Update()
+		{
+			if (Input.GetMouseButton(0))
 			{
-				if (ClickUtils.AreaContainsClick(clickArea.bounds, mousePosition))
+				Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+				if (clickArea != null)
 				{
-					OnClick();
+					if (ClickUtils.AreaContainsClick(clickArea.bounds , mousePosition))
+					{
+						OnClick();
+					}
+				}
+				else
+				{
+					Debug.Log("No area was selected");
 				}
 			}
-			else
+		}
+		protected virtual void OnClickRelease()
+		{
+			if (isClicked)
 			{
-				Debug.Log("No area was selected");
+				isClicked = false;
 			}
 		}
-	}
 
-	protected virtual void OnClick() 
-	{
-		Debug.Log("clicking");
+		protected virtual void OnClick()
+		{
+			Debug.Log("clicking");
+		}
 	}
 }
