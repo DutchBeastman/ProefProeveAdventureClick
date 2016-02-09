@@ -9,19 +9,37 @@ namespace Utils
 		// Use this for initialization
 		[SerializeField]
 		private Collider2D clickArea;
-		[SerializeField]
+
 		private bool isClicked;
+
+		private Vector2 mousePosition;
+
+		public Vector2 MousePosition
+		{
+			get
+			{
+				return mousePosition;
+			}
+		}
+		public bool IsClicked
+		{
+			get
+			{
+				return isClicked;
+			}
+		}
 
 		protected void OnDisable()
 		{
 			OnClickRelease();
 		}
-		// Update is called once per frame
+
 		protected virtual void Update()
 		{
-			if (Input.GetMouseButton(0))
+
+			mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			if (Input.GetMouseButtonDown(0))
 			{
-				Vector2 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 				if (clickArea != null)
 				{
 					if (ClickUtils.AreaContainsClick(clickArea.bounds , mousePosition))
@@ -34,7 +52,12 @@ namespace Utils
 					Debug.Log("No area was selected");
 				}
 			}
+			else if (Input.GetMouseButtonUp(0))
+			{
+				OnClickRelease();
+			}
 		}
+
 		protected virtual void OnClickRelease()
 		{
 			if (isClicked)
@@ -45,8 +68,15 @@ namespace Utils
 
 		protected virtual void OnClick()
 		{
-			Debug.Log("clicking");
-			isClicked = true;
+			if (isClicked)
+			{
+				isClicked = false;
+			}
+			else
+			{
+				isClicked = true;
+			}
+			
 		}
 	}
 }

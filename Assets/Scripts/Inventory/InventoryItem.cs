@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Utils;
 
 public class InventoryItem : Click {
 
-	// Use this for initialization
 	private bool isPickedUp;
 	[SerializeField]private InventoryManager inventory;
-	
-	// Update is called once per frame
+
 	protected override void Update () 
 	{
 		base.Update();
