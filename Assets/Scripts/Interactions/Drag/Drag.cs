@@ -8,7 +8,7 @@ namespace Utils
 
 		private Vector3 moveToPos;
 
-		private float speed; 
+		private float speed;
 
 		private void Awake()
 		{
@@ -21,7 +21,7 @@ namespace Utils
 			{
 				moveToPos = new Vector3(MousePosition.x , MousePosition.y , 0);
 				float distance = Vector3.Distance(gameObject.transform.position , moveToPos);
-				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position , moveToPos, distance * speed);
+				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position , moveToPos , distance * speed);
 			}
 		}
 		protected override void OnClick()

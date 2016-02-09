@@ -1,26 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Utils;
-
-public class InventoryItem : Click {
-
-	private bool isPickedUp;
-	[SerializeField]private InventoryManager inventory;
-
-	protected override void Update () 
+namespace Utils
+{
+	public class InventoryItem : Click
 	{
-		base.Update();
-	}
 
-	protected override void OnClick()
-	{
-		base.OnClick();
-		inventory.AddInventoryItem(this);
-	}
+		private bool isPickedUp;
+		[SerializeField]
+		private InventoryManager inventory;
 
-	public void OnAddedToInventory() 
-	{
-		Debug.Log("added");
-		gameObject.SetActive(false);
+		protected override void Update()
+		{
+			base.Update();
+		}
+
+		protected override void OnClick()
+		{
+			base.OnClick();
+		}
+
+		public void OnAddedToInventory()
+		{
+			Debug.Log("added");
+			inventory.AddInventoryItem(this);
+		}
 	}
 }

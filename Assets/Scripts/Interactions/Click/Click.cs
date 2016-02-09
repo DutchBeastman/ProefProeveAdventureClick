@@ -5,8 +5,6 @@ namespace Utils
 {
 	public class Click : MonoBehaviour
 	{
-
-		// Use this for initialization
 		[SerializeField]
 		private Collider2D clickArea;
 
@@ -36,7 +34,6 @@ namespace Utils
 
 		protected virtual void Update()
 		{
-
 			mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 			if (Input.GetMouseButtonDown(0))
 			{
@@ -76,7 +73,7 @@ namespace Utils
 			{
 				isClicked = true;
 			}
-			
+
 		}
 	}
 }

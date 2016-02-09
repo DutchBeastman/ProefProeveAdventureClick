@@ -2,28 +2,32 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class InventoryManager : MonoBehaviour {
-
-	// Use this for initialization
-	private List<InventoryItem> items;
-	protected void Awake () 
+namespace Utils
+{
+	public class InventoryManager : MonoBehaviour
 	{
-		items = new List<InventoryItem>();
-	}
 
-	public void AddInventoryItem(InventoryItem item) 
-	{
-		items.Add(item);
-		item.OnAddedToInventory();
-	}
+		// Use this for initialization
+		private List<InventoryItem> items;
+		protected void Awake()
+		{
+			items = new List<InventoryItem>();
+		}
 
-	public void RemoveInventoryItem(InventoryItem item)
-	{
-		items.Remove(item);
-	}
+		public void AddInventoryItem(InventoryItem item)
+		{
+			items.Add(item);
+			item.OnAddedToInventory();
+		}
 
-	public bool ContainsItem(InventoryItem item)
-	{
-		return items.Contains(item);
+		public void RemoveInventoryItem(InventoryItem item)
+		{
+			items.Remove(item);
+		}
+
+		public bool ContainsItem(InventoryItem item)
+		{
+			return items.Contains(item);
+		}
 	}
 }
