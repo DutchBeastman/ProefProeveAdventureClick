@@ -1,27 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
-
-public class InventoryItem : Click {
-
-	// Use this for initialization
-	private bool isPickedUp;
-	[SerializeField]private InventoryManager inventory;
-	
-	// Update is called once per frame
-	protected override void Update () 
+using Utils;
+namespace Utils
+{
+	public class InventoryItem : Click
 	{
-		base.Update();
-	}
 
-	protected override void OnClick()
-	{
-		base.OnClick();
-		inventory.AddInventoryItem(this);
-	}
+		private bool isPickedUp;
+		[SerializeField]
+		private InventoryManager inventory;
 
-	public void OnAddedToInventory() 
-	{
-		Debug.Log("added");
-		gameObject.SetActive(false);
+		protected override void Update()
+		{
+			base.Update();
+		}
+
+		protected override void OnClick()
+		{
+			base.OnClick();
+		}
+
+		public void OnAddedToInventory()
+		{
+			Debug.Log("added");
+			inventory.AddInventoryItem(this);
+		}
 	}
 }
