@@ -8,6 +8,10 @@ public class GameBoardManager : MonoBehaviour {
 
 	protected virtual void Update()
 	{
-			
+				
+	}
+	public void GotoGameboard()
+	{
+
 	}
 }
