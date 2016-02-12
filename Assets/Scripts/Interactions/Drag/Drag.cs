@@ -7,12 +7,11 @@ namespace Utils
 		private bool isDragging;
 
 		private Vector3 moveToPos;
-
-		private float speed;
+		private Vector3 originalPos;
 
 		private void Awake()
 		{
-			speed = 0.4f;
+			originalPos = gameObject.transform.position;
 		}
 		protected override void Update()
 		{
@@ -20,8 +19,11 @@ namespace Utils
 			if (isDragging)
 			{
 				moveToPos = new Vector3(MousePosition.x , MousePosition.y , 0);
-				float distance = Vector3.Distance(gameObject.transform.position , moveToPos);
-				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position , moveToPos , distance * speed);
+				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position , moveToPos , 0.45f);
+			}
+			else if (!isDragging)
+			{
+				gameObject.transform.position = Vector3.Lerp(gameObject.transform.position , originalPos , 0.15f);
 			}
 		}
 		protected override void OnClick()

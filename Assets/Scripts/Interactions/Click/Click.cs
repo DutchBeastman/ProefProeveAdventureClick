@@ -35,6 +35,7 @@ namespace Utils
 		protected virtual void Update()
 		{
 			mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
 			if (Input.GetMouseButtonDown(0))
 			{
 				if (clickArea != null)
@@ -57,23 +58,12 @@ namespace Utils
 
 		protected virtual void OnClickRelease()
 		{
-			if (isClicked)
-			{
-				isClicked = false;
-			}
+			isClicked = isClicked ? false : true;
 		}
 
 		protected virtual void OnClick()
 		{
-			if (isClicked)
-			{
-				isClicked = false;
-			}
-			else
-			{
-				isClicked = true;
-			}
-
+			isClicked = isClicked ? false : true;
 		}
 	}
 }

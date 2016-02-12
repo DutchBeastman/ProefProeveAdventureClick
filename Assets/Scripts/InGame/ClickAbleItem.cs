@@ -2,7 +2,7 @@
 using System.Collections;
 using Utils;
 
-public class ClickAbleItem : Click
+public class ClickableItem : Click
 {
 
 	protected override void Update()
