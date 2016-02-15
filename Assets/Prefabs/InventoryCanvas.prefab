@@ -408,7 +408,7 @@ GameObject:
   - 114: {fileID: 11439574}
   - 61: {fileID: 6162236}
   m_Layer: 5
-  m_Name: InventoryItem
+  m_Name: InventoryItem 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1036,7 +1036,7 @@ GameObject:
   - 114: {fileID: 11464556}
   - 61: {fileID: 6167748}
   m_Layer: 5
-  m_Name: InventoryItem
+  m_Name: InventoryItem 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2313,7 +2313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2902,6 +2902,7 @@ MonoBehaviour:
   - {fileID: 11451124}
   - {fileID: 11464242}
   - {fileID: 11472518}
+  inventory: {fileID: 0}
 --- !u!114 &11465294
 MonoBehaviour:
   m_ObjectHideFlags: 1
