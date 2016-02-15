@@ -70,8 +70,7 @@ namespace Utils
 		protected override void OnClick()
 		{
 			base.OnClick();
-			Debug.Log("ayy");
-			//inventory.RemoveInventoryItem(ItemId);
+			inventory.RemoveInventoryItem(ItemId);
 		}
 
 		public void OnItemsSet()
