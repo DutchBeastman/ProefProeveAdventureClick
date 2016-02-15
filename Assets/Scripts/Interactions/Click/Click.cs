@@ -5,9 +5,8 @@ namespace Utils
 {
 	public class Click : MonoBehaviour
 	{
-		[SerializeField]
-		private Collider2D clickArea;
-
+		[SerializeField]private Collider2D clickArea;
+		[SerializeField]private bool isUIElement;
 		private bool isClicked;
 
 		private Vector2 mousePosition;
@@ -34,7 +33,14 @@ namespace Utils
 
 		protected virtual void Update()
 		{
+			if(!isUIElement) 
+			{ 
 			mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			}
+			else
+			{
+				mousePosition = Input.mousePosition;
+            }
 
 			if (Input.GetMouseButtonDown(0))
 			{
