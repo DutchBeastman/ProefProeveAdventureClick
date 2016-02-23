@@ -21,5 +21,20 @@ namespace Utils
 				uiItems[i].OnItemsSet();
 			}
 		}
+
+		public void RemoveItems()
+		{
+			for (int j = uiItems.Count; j >= inventory.items.Count; j--)
+			{
+				if (uiItems[j].IsActive == true)
+				{
+					uiItems[j].ItemId = 0;
+					uiItems[j].ItemName = null;
+					uiItems[j].NumberOfUsages = 0;
+					uiItems[j].ItemImage = null;
+					uiItems[j].OnItemsRemove();
+				}
+			}
+		}
 	}
 }

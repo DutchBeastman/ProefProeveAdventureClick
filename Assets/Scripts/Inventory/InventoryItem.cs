@@ -14,7 +14,19 @@ namespace Utils
 		[SerializeField]private int itemId;
 		[SerializeField]private int numberOfUsages;
 		private Sprite itemImage;
+		private bool isActive;
 
+		public bool IsActive
+		{
+			get
+			{
+				return isActive;
+			}
+			set
+			{
+				isActive = value;
+			}
+		}
 		public Sprite ItemImage
 		{
 			get
@@ -76,7 +88,14 @@ namespace Utils
 		public void OnItemsSet()
 		{
 			GetComponent<Image>().sprite = ItemImage;
+			IsActive = true;
 			gameObject.SetActive(true);
+		}
+		public void OnItemsRemove()
+		{
+			GetComponent<Image>().sprite = null;
+			IsActive = false;
+			gameObject.SetActive(false);
 		}
 	}
 }
