@@ -20,11 +20,12 @@ namespace Utils
 				uiItems[i].ItemImage = inventory.items[i].ItemImage;
 				uiItems[i].OnItemsSet();
 			}
+			RemoveItems();
 		}
 
 		public void RemoveItems()
 		{
-			for (int j = uiItems.Count; j >= inventory.items.Count; j--)
+			for (int j = uiItems.Count - 1; j >= inventory.items.Count; j--)
 			{
 				if (uiItems[j].IsActive == true)
 				{
