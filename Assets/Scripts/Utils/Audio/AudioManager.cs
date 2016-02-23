@@ -3,8 +3,8 @@ using System.Collections;
 
 namespace Utils
 {
-	public class AudioManagers : MonoBehaviour
+	public class AudioManager : MonoBehaviour
 	{
-
+	
 	}
 }
