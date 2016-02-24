@@ -3,15 +3,45 @@ using System.Collections;
 
 public class SlotSwitcher : MonoBehaviour {
 
-	[SerializeField]
-	GameObject[] slots;
-	// Use this for initialization
-	void Start () {
-	
+	[SerializeField] GameObject[] slots;
+	private int activeSlotNumber;
+
+	protected void Awake() 
+	{
+		slots[activeSlotNumber].SetActive(true);
+	}
+	public void SwitchForward()
+	{
+		activeSlotNumber++;
+		if (activeSlotNumber >= 5)
+		{
+			slots[4].SetActive(false);
+			activeSlotNumber = 0;
+			slots[activeSlotNumber].SetActive(true);
+		}
+		else
+		{ 
+		slots[activeSlotNumber - 1].SetActive(false);
+		slots[activeSlotNumber].SetActive(true);
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
+	public void SwitchBackward()
+	{
 	
+		activeSlotNumber--;
+		Debug.Log(activeSlotNumber);
+		Debug.Log(activeSlotNumber - 1);
+		if (activeSlotNumber <= -1)
+		{
+			activeSlotNumber = 4;
+			slots[0].SetActive(false);
+			slots[activeSlotNumber].SetActive(true);
+		}
+		else
+		{ 
+		slots[activeSlotNumber + 1].SetActive(false);
+		slots[activeSlotNumber].SetActive(true);
+		}
 	}
 }
