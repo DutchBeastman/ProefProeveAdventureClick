@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour
 {
     [SerializeField]
     private AudioMixer audioMix;
+	[SerializeField]
+	private AudioMixerGroup[] audioMixerGroups;
     private AudioSource aSource;
 
 	protected void Awake()
@@ -19,25 +21,23 @@ public class AudioManager : MonoBehaviour
 
     public void PlayClip(AudioClip clip, AudioMix mix)
     {
-        aSource.PlayOneShot(clip);
-        //aSource.outputAudioMixerGroup =  ;
-        
+		aSource.outputAudioMixerGroup = CheckMix(mix);
+		if (aSource.outputAudioMixerGroup != null)
+		{
+			Debug.Log(aSource.outputAudioMixerGroup);
+			aSource.PlayOneShot(clip);
+		}
     }
     private AudioMixerGroup CheckMix(AudioMix mix)
     {
         switch (mix)
         {
             case AudioMix.Music:
-              
-                break;
-            case AudioMix.SFX:
-               
-                break;
+				return audioMixerGroups[1];
+			case AudioMix.SFX:
+				return audioMixerGroups[2];
             default:
-                
-                break;
-            
+				return audioMixerGroups[0];          
         }
-        return null;
     }
 }
