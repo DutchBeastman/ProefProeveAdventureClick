@@ -49,6 +49,10 @@ public class ClickableItem : Click
 		{
 			itemImage = GetComponent<SpriteRenderer>().sprite;
 		}
+		if(null == inventory)
+		{
+			inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<InventoryManager>();
+		}
 
 	}
 
