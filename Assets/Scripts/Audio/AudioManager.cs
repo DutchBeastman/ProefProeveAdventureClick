@@ -20,7 +20,7 @@ public class AudioManager : MonoBehaviour
     public void PlayClip(AudioClip clip, AudioMix mix)
     {
         aSource.PlayOneShot(clip);
-        aSource.outputAudioMixerGroup =  ;
+        //aSource.outputAudioMixerGroup =  ;
         
     }
     private AudioMixerGroup CheckMix(AudioMix mix)
@@ -28,11 +28,16 @@ public class AudioManager : MonoBehaviour
         switch (mix)
         {
             case AudioMix.Music:
-                return audioMix.outputAudioMixerGroup;
+              
                 break;
             case AudioMix.SFX:
-                return audioMix.outputAudioMixerGroup;
+               
                 break;
+            default:
+                
+                break;
+            
         }
+        return null;
     }
 }
