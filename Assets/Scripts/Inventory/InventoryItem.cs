@@ -4,17 +4,22 @@ using Utils;
 using UnityEngine.UI;
 namespace Utils
 {
-	public class InventoryItem : Click
+	public class InventoryItem : Drag
 	{
 
 		private bool isPickedUp;
 		[SerializeField]private InventoryManager inventory;
+
+		[SerializeField]private Transform targetPoint;
+		[SerializeField][Range(0.1f, 5f)]private float distanceToPoint = 2.0f;
 
 		[SerializeField]private string itemName;
 		[SerializeField]private int itemId;
 		[SerializeField]private int numberOfUsages;
 		private Sprite itemImage;
 		private bool isActive;
+
+		private Vector3 startPos;
 
 		public bool IsActive
 		{
@@ -80,29 +85,46 @@ namespace Utils
 			{
 					inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<InventoryManager>();
 			}
+			
 		}
 		protected override void Update()
 		{
 			base.Update();
+			if (IsOnPoint())
+			{
+				inventory.RemoveInventoryItem(ItemId);
+			}
 		}
 
 		protected override void OnClick()
 		{
 			base.OnClick();
-			inventory.RemoveInventoryItem(ItemId);
 		}
-
 		public void OnItemsSet()
 		{
 			GetComponent<Image>().sprite = ItemImage;
 			IsActive = true;
 			gameObject.SetActive(true);
+			originalPos = transform.position;
 		}
 		public void OnItemsRemove()
 		{
 			GetComponent<Image>().sprite = null;
 			IsActive = false;
 			gameObject.SetActive(false);
+		}
+		private bool IsOnPoint()
+		{
+			if (targetPoint != null)
+			{
+				Vector3 offset = targetPoint.position - transform.position;
+				float sqrLen = offset.sqrMagnitude;
+				if (sqrLen < distanceToPoint * distanceToPoint)
+				{
+					return true;
+				}
+			}
+			return false;
 		}
 	}
 }

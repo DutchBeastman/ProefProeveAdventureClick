@@ -7,7 +7,8 @@ namespace Utils
 		private bool isDragging;
 
 		private Vector3 moveToPos;
-		private Vector3 originalPos;
+		[HideInInspector]
+		public Vector3 originalPos;
 
 		private void Awake()
 		{
