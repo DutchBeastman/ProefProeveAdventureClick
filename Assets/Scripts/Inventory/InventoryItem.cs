@@ -74,6 +74,13 @@ namespace Utils
 			}
 		}
 
+		protected void Awake()
+		{
+			if(inventory == null)
+			{
+					inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<InventoryManager>();
+			}
+		}
 		protected override void Update()
 		{
 			base.Update();
