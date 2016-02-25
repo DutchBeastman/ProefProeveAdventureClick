@@ -1,20 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Utils;
 
-public class AudioClipObject : ClickableItem {
-	[SerializeField]
-	private AudioClip audioClip;
-	private AudioManager audioManager;
+public enum AudioMix
+{
+    Music,
+    SFX
+}
 
-	public enum audioMix
-	{
-		Music,
-		SFX
-	}
+public class AudioClipObject : Click
+{
+    [SerializeField]
+    private AudioClip audioClip;
+    private AudioManager audioManager;
 
-	protected override void OnClick()
-	{
-		base.OnClick();
-		
-	}
+    public AudioMix sounds;
+
+    protected override void OnClick()
+    {
+        base.OnClick();
+        //audioManager.PlayClip(audioClip, sounds);
+    }
 }
