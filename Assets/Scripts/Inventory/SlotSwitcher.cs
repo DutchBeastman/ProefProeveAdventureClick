@@ -30,8 +30,6 @@ public class SlotSwitcher : MonoBehaviour {
 	{
 	
 		activeSlotNumber--;
-		Debug.Log(activeSlotNumber);
-		Debug.Log(activeSlotNumber - 1);
 		if (activeSlotNumber <= -1)
 		{
 			activeSlotNumber = 4;
