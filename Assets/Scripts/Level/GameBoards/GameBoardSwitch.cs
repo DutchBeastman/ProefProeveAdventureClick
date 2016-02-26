@@ -6,7 +6,7 @@ public class GameBoardSwitch : Click {
 	[SerializeField] private GameBoardManager manager;
 	[SerializeField] private int id;
 
-	protected void Awake()
+	protected override void Awake()
 	{
 		manager = FindObjectOfType<GameBoardManager>();
 	}

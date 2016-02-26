@@ -79,7 +79,7 @@ namespace Utils
 			}
 		}
 
-		protected void Awake()
+		protected override void Awake()
 		{
 			if(inventory == null)
 			{

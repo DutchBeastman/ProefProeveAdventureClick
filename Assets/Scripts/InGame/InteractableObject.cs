@@ -10,7 +10,7 @@ public class InteractableObject : Click {
 	[SerializeField]
 	string objectText;
 	// Use this for initialization
-	void Awake() 
+	protected override void Awake() 
 	{
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Text>();
 		Debug.Log(dialogueText);

@@ -5,7 +5,7 @@ using System.Collections;
 
 namespace Utils
 {
-	public class AudioManager : IGameDependency
+	public class AudioManager : MonoBehaviour , IGameDependency
 	{
 		private const int NUM_CHANNELS = 32;
 
@@ -122,7 +122,7 @@ namespace Utils
 		{
 			if (channel != null && channel.IsPlaying)
 			{
-				coroutineRunner.StartCoroutine(DoFade(channel , 0 , 1 , steps));
+				StartCoroutine(DoFade(channel , 0 , 1 , steps));
 			}
 		}
 
@@ -130,7 +130,7 @@ namespace Utils
 		{
 			if (channel != null && channel.IsPlaying)
 			{
-				coroutineRunner.StartCoroutine(DoFade(channel , 1 , 0 , steps));
+				StartCoroutine(DoFade(channel , 1 , 0 , steps));
 			}
 		}
 

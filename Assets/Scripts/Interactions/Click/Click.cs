@@ -30,7 +30,10 @@ namespace Utils
 		{
 			OnClickRelease();
 		}
+		protected virtual void Awake()
+		{
 
+		}
 		protected virtual void Update()
 		{
 			if(!isUIElement) 
