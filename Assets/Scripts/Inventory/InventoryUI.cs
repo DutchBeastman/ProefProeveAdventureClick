@@ -17,6 +17,8 @@ namespace Utils
 				uiItems[i].ItemName = inventory.items[i].ItemName;
 				uiItems[i].NumberOfUsages = inventory.items[i].NumberOfUsages;
 				uiItems[i].ItemImage = inventory.items[i].ItemImage;
+				Debug.Log(inventory.items[i].Target);
+				uiItems[i].TargetPoint = inventory.items[i].Target;
 				uiItems[i].OnItemsSet();
 			}
 			RemoveItems();
@@ -32,6 +34,7 @@ namespace Utils
 					uiItems[j].ItemName = null;
 					uiItems[j].NumberOfUsages = 0;
 					uiItems[j].ItemImage = null;
+					uiItems[j].TargetPoint = null;
 					uiItems[j].OnItemsRemove();
 				}
 			}
