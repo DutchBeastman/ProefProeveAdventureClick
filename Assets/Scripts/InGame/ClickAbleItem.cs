@@ -55,7 +55,7 @@ public class ClickableItem : Click
 
 
 	
-	protected void Awake() 
+	protected override void Awake() 
 	{
 		if(null == itemImage) 
 		{
