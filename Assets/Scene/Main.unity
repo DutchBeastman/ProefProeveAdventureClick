@@ -85,6 +85,12 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualCellSize: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &138594348 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11452358, guid: 812a75b3b39cb9f45959d7f7869313f4,
+    type: 2}
+  m_PrefabInternal: {fileID: 587061165}
+  m_Script: {fileID: -765806418, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!114 &138594350 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11464556, guid: 812a75b3b39cb9f45959d7f7869313f4,
@@ -170,6 +176,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 22443064, guid: bf4d3969d03093244b4981070efb9bf7, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -310
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bf4d3969d03093244b4981070efb9bf7, type: 2}
   m_IsPrefabParent: 0
@@ -216,7 +226,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22405524, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 22405524, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -265,6 +275,18 @@ Prefab:
     - target: {fileID: 142076, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
       propertyPath: m_Name
       value: GameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 11464556, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
+      propertyPath: mapImage
+      value: 
+      objectReference: {fileID: 138594348}
+    - target: {fileID: 11464556, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
+      propertyPath: distanceToPoint
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 189286, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
@@ -462,19 +484,7 @@ Prefab:
       objectReference: {fileID: 1511894463}
     - target: {fileID: 198830, guid: af5a3358dd0939d49a034b5a14ec9a0b, type: 2}
       propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 430330, guid: af5a3358dd0939d49a034b5a14ec9a0b, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 5.1874633
-      objectReference: {fileID: 0}
-    - target: {fileID: 430330, guid: af5a3358dd0939d49a034b5a14ec9a0b, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 5.1874633
-      objectReference: {fileID: 0}
-    - target: {fileID: 430330, guid: af5a3358dd0939d49a034b5a14ec9a0b, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.5187463
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: af5a3358dd0939d49a034b5a14ec9a0b, type: 2}
