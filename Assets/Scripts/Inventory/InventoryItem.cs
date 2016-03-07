@@ -134,7 +134,7 @@ namespace Utils
 			{
 				
 				Vector3 point = Camera.main.WorldToScreenPoint(transform.position);
-                Debug.Log(Camera.main.ScreenToWorldPoint(transform.position));
+               // Debug.Log(Camera.main.ScreenToWorldPoint(transform.position));
 				Vector3 offset = targetPoint.position - point;
 				float sqrLen = offset.sqrMagnitude;
 				if (sqrLen < distanceToPoint * distanceToPoint)

@@ -41,8 +41,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gameBoards:
   - {fileID: 198830, guid: af5a3358dd0939d49a034b5a14ec9a0b, type: 2}
-  - {fileID: 169566, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
-  - {fileID: 186320, guid: 6f661f4a23fd98b4889c1af7fb95e66f, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
