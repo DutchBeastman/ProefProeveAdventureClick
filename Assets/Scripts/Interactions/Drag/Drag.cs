@@ -10,8 +10,9 @@ namespace Utils
 		[HideInInspector]
 		public Vector3 originalPos;
 
-		private void Awake()
+		protected override void Awake()
 		{
+			base.Awake();
 			originalPos = gameObject.transform.position;
 		}
 		protected override void Update()
@@ -30,18 +31,12 @@ namespace Utils
 		protected override void OnClick()
 		{
 			base.OnClick();
-			if (IsClicked)
-			{
-				isDragging = true;
-			}
+			isDragging = true;
 		}
 		protected override void OnClickRelease()
 		{
 			base.OnClickRelease();
-			if (!IsClicked)
-			{
-				isDragging = false;
-			}
+			isDragging = false;
 		}
 	}
 }
