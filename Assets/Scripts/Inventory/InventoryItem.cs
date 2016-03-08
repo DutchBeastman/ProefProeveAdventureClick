@@ -15,10 +15,23 @@ namespace Utils
 		[SerializeField]private string itemName;
 		[SerializeField]private int itemId;
 		[SerializeField]private int numberOfUsages;
+		[SerializeField]private InteractableObject uiUsableObject;
 		private Sprite itemImage;
 		private bool isActive;
 
 		private Vector3 startPos;
+
+		public InteractableObject UiUsableObject
+		{
+			get
+			{
+				return uiUsableObject;
+			}
+			set
+			{
+				uiUsableObject = value;
+			}
+		}
 
 		public Transform TargetPoint
 		{
@@ -103,7 +116,10 @@ namespace Utils
 			if (IsOnPoint())
 			{
 				Debug.Log("Do Open Drawer");
-				inventory.RemoveInventoryItem(ItemId);
+				uiUsableObject.ActivateItem = true;
+				//Debug.Log(uiUsableObject);
+                inventory.RemoveInventoryItem(ItemId);
+
 			}
 		}
 

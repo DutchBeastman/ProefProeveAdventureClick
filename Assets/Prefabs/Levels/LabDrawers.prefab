@@ -179,6 +179,7 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 1
   target: {fileID: 483952, guid: 66b1d5ceb3db42746ad86bb35c40b553, type: 2}
+  usableObject: {fileID: 11483542, guid: 66b1d5ceb3db42746ad86bb35c40b553, type: 2}
 --- !u!212 &21262252
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -280,6 +281,11 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 483952, guid: 66b1d5ceb3db42746ad86bb35c40b553, type: 2}
+    - target: {fileID: 0}
+      propertyPath: usableObject
+      value: 
+      objectReference: {fileID: 11483542, guid: 66b1d5ceb3db42746ad86bb35c40b553,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 173656}
