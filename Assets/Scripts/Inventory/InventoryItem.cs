@@ -6,11 +6,6 @@ namespace Utils
 {
 	public class InventoryItem : Drag
 	{
-
-		public Image mapImage;
-		public int canvasWidth = 1920;
-		public int canvasHeight = 1080;
-
 		private bool isPickedUp;
 		[SerializeField]private InventoryManager inventory;
 
@@ -107,6 +102,7 @@ namespace Utils
 			base.Update();
 			if (IsOnPoint())
 			{
+				Debug.Log("Do Open Drawer");
 				inventory.RemoveInventoryItem(ItemId);
 			}
 		}
@@ -133,8 +129,8 @@ namespace Utils
 			if (targetPoint != null)
 			{
 				
-				Vector3 point = Camera.main.WorldToScreenPoint(transform.position);
-               // Debug.Log(Camera.main.ScreenToWorldPoint(transform.position));
+				Vector3 point = Camera.main.ScreenToWorldPoint(transform.position);
+				point.z += 10;
 				Vector3 offset = targetPoint.position - point;
 				float sqrLen = offset.sqrMagnitude;
 				if (sqrLen < distanceToPoint * distanceToPoint)
