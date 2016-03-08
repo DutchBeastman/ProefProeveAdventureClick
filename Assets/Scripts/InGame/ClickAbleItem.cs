@@ -12,6 +12,7 @@ public class ClickableItem : Click
 	[SerializeField]private int numberOfUsages;
 	[SerializeField]private Transform target;
 	[SerializeField]private string usableObject;
+	[SerializeField]private GameObject finishedGameObject;
 	private Sprite itemImage;
 
 	public string UsableObject
@@ -97,6 +98,10 @@ public class ClickableItem : Click
 	public void OnAddedToInventory()
 	{
 		gameObject.SetActive(false);
+		if(gameObject.name == "RecipePieceOne")
+		{
+			finishedGameObject.SetActive(true);
+		}
 	}
 
 }
