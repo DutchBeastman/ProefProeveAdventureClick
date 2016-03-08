@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &132244
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &166716
 GameObject:
   m_ObjectHideFlags: 0
@@ -87,7 +87,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &179388
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &198830
 GameObject:
   m_ObjectHideFlags: 0
@@ -177,7 +177,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 179388}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.301, y: -0.277, z: 0}
+  m_LocalPosition: {x: -1.203, y: -0.277, z: 0}
   m_LocalScale: {x: 2.620991, y: 21.745348, z: 1}
   m_Children: []
   m_Father: {fileID: 430330}
@@ -201,7 +201,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 166716}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.172, y: 0.114, z: 0}
+  m_LocalPosition: {x: 0.178, y: 0.114, z: 0}
   m_LocalScale: {x: 2.620991, y: 3.7742107, z: 1}
   m_Children: []
   m_Father: {fileID: 430330}
@@ -237,8 +237,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 132244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.078, y: -0.134, z: 0}
-  m_LocalScale: {x: 1.2122084, y: 2.218529, z: 1}
+  m_LocalPosition: {x: 0.097, y: -0.134, z: 0}
+  m_LocalScale: {x: 1.5758703, y: 2.218529, z: 1}
   m_Children: []
   m_Father: {fileID: 430330}
   m_RootOrder: 6
@@ -355,7 +355,7 @@ MonoBehaviour:
   clickArea: {fileID: 6175438}
   isUIElement: 0
   manager: {fileID: 0}
-  id: 7
+  id: 1
 --- !u!114 &11455988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -385,7 +385,7 @@ MonoBehaviour:
   clickArea: {fileID: 6158266}
   isUIElement: 0
   manager: {fileID: 0}
-  id: 8
+  id: 2
 --- !u!114 &11476894
 MonoBehaviour:
   m_ObjectHideFlags: 1
