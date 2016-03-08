@@ -8,10 +8,36 @@ public class DrawerOpener : Click {
 	[SerializeField]
 	private Sprite openDrawer;
 
-	protected override void OnClick()
+    private SpriteRenderer spriteRend; 
+    private bool isClosed;
+
+    public bool IsClosed
+    {
+        get
+        {
+            return isClosed;
+        }
+    }
+
+    protected override void Awake()
+    {
+        base.Awake();
+        isClosed = true;
+        spriteRend = gameObject.GetComponent<SpriteRenderer>();
+        spriteRend.sprite = closedDrawer;
+    }
+    protected override void OnClick()
 	{
 		base.OnClick();
-		//if(gameObject.sprite)
+        if (isClosed)
+        {
+            spriteRend.sprite = openDrawer;
+            isClosed = false;
+        }else if (!isClosed)
+        {
+            spriteRend.sprite = closedDrawer;
+            isClosed = true;
+        }
 	}
 
 }
