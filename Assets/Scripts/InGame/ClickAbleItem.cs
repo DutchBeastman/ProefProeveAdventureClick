@@ -11,10 +11,10 @@ public class ClickableItem : Click
 	[SerializeField]private int itemId;
 	[SerializeField]private int numberOfUsages;
 	[SerializeField]private Transform target;
-	[SerializeField]private InteractableObject usableObject;
+	[SerializeField]private string usableObject;
 	private Sprite itemImage;
 
-	public InteractableObject UsableObject
+	public string UsableObject
 	{
 		get
 		{

@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class InteractableObject : Click {
 
-	public bool ActivateItem;
 	private Text dialogueText;
 	[SerializeField]
 	string objectText;
@@ -13,7 +12,6 @@ public class InteractableObject : Click {
 	protected override void Awake() 
 	{
 		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Text>();
-		Debug.Log(dialogueText);
 	}
 
 	protected override void OnClick()
@@ -24,6 +22,11 @@ public class InteractableObject : Click {
 	protected override void OnClickRelease()
 	{
 		base.OnClickRelease();
+	}
+	protected override void Update()
+	{
+		
+		base.Update();
 	}
 	protected virtual void OnItemUsed()
 	{

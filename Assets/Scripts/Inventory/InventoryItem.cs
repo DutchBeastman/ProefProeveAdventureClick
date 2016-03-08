@@ -15,13 +15,13 @@ namespace Utils
 		[SerializeField]private string itemName;
 		[SerializeField]private int itemId;
 		[SerializeField]private int numberOfUsages;
-		[SerializeField]private InteractableObject uiUsableObject;
+		[SerializeField]private string uiUsableObject;
 		private Sprite itemImage;
 		private bool isActive;
 
 		private Vector3 startPos;
 
-		public InteractableObject UiUsableObject
+		public string UiUsableObject
 		{
 			get
 			{
@@ -116,7 +116,10 @@ namespace Utils
 			if (IsOnPoint())
 			{
 				Debug.Log("Do Open Drawer");
-				uiUsableObject.ActivateItem = true;
+				if (uiUsableObject != "")
+				{
+				GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
+				}
 				//Debug.Log(uiUsableObject);
                 inventory.RemoveInventoryItem(ItemId);
 
@@ -139,6 +142,7 @@ namespace Utils
 			GetComponent<Image>().sprite = null;
 			IsActive = false;
 			gameObject.SetActive(false);
+			gameObject.transform.position = originalPos;
 		}
 		private bool IsOnPoint()
 		{

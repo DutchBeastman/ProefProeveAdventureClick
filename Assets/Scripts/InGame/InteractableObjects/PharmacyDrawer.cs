@@ -5,37 +5,33 @@ public class PharmacyDrawer : InteractableObject {
 
 	[SerializeField]private GameObject itemToActivate;
 	[SerializeField]private Sprite imageAfterActivation;
+	private bool activated;
     protected override void Awake()
 	{
 		base.Awake();
-		//ActivateItem = false;
-		Debug.Log(itemToActivate);
-		//itemToActivate.SetActive(false);
-		Debug.Log(ActivateItem);
-	}
 
+	}
+	protected void Start()
+	{
+
+	}
 	protected override void OnClick()
 	{
-		base.OnClick();
+		if (!activated)
+		{
+			base.OnClick();
+		}
 	}
 	protected override void OnClickRelease()
 	{
 		base.OnClickRelease();
 	}
-	protected override void Update()
+	protected override void OnItemUsed()
 	{
-		base.Update();
-		if(ActivateItem)
-		{
-			Debug.Log("usingItem");
-			OnItemUsedYes();
-		}
-	}
-	private void OnItemUsedYes()
-	{
+		base.OnItemUsed();
 		Debug.Log("itemIsUsed");
 		itemToActivate.SetActive(true);
 		GetComponent<SpriteRenderer>().sprite = imageAfterActivation;
-		ActivateItem = false;
+		activated = true;
 	}
 }

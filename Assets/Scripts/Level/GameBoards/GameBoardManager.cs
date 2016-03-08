@@ -31,7 +31,6 @@ public class GameBoardManager : MonoBehaviour
 			boards[currentID].SetActive(false);
 		}
 		boards[id].SetActive(true);
-		Debug.Log(boards[id].name);
 		currentID = id;
 	}
 }

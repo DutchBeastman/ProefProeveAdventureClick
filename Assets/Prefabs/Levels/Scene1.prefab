@@ -399,6 +399,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6199678}
   isUIElement: 0
+  ActivateItem: 0
   objectText: i should cut this plant with a scissor.
 --- !u!114 &11494630
 MonoBehaviour:
@@ -418,6 +419,7 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 1
   target: {fileID: 0}
+  usableObject: {fileID: 0}
 --- !u!212 &21245082
 SpriteRenderer:
   m_ObjectHideFlags: 1
