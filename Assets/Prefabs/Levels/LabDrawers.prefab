@@ -179,7 +179,7 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 1
   target: {fileID: 483952, guid: 66b1d5ceb3db42746ad86bb35c40b553, type: 2}
-  usableObject: {fileID: 11483542, guid: 66b1d5ceb3db42746ad86bb35c40b553, type: 2}
+  usableObject: {fileID: 0}
 --- !u!212 &21262252
 SpriteRenderer:
   m_ObjectHideFlags: 1
