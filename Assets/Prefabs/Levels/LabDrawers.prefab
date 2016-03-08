@@ -320,7 +320,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &154380
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +914,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 192094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.149, y: 0.44700003, z: 0}
+  m_LocalPosition: {x: 0.466, y: 0.44700003, z: 0}
   m_LocalScale: {x: 0.10000001, y: 0.099999994, z: 1}
   m_Children: []
   m_Father: {fileID: 400620}
@@ -1006,7 +1006,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 154038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.059, y: -1.147, z: 0}
+  m_LocalPosition: {x: 0.004, y: 0.775, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_Children: []
   m_Father: {fileID: 483406}
@@ -1042,7 +1042,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 127038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.468, y: 0.44399998, z: 0}
+  m_LocalPosition: {x: -0.147, y: 0.44399998, z: 0}
   m_LocalScale: {x: 0.10000001, y: 0.099999994, z: 1}
   m_Children: []
   m_Father: {fileID: 400620}
@@ -1963,6 +1963,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fea6b06a7c09d249ac64ff6d557da08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  key: {fileID: 154038}
   markedDrawers:
   - {fileID: 11438026}
   - {fileID: 11468018}
@@ -2077,6 +2078,7 @@ MonoBehaviour:
   numberOfUsages: 1
   target: {fileID: 483952, guid: 66b1d5ceb3db42746ad86bb35c40b553, type: 2}
   usableObject: PharmacyDrawer
+  finishedGameObject: {fileID: 0}
 --- !u!114 &11461160
 MonoBehaviour:
   m_ObjectHideFlags: 1

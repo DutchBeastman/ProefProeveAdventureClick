@@ -4,8 +4,11 @@ using System.Collections;
 public class DrawerManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject key;
+    [SerializeField]
     private DrawerOpener[] markedDrawers;
 
+    private bool keyActivated;
     private void Update()
     {
         CheckDrawers();
@@ -32,7 +35,11 @@ public class DrawerManager : MonoBehaviour
     }
     private void KeyAppear()
     {
-        Debug.Log("DoneKEYAPPEAR");
+        if (!keyActivated)
+        {
+            key.SetActive(true);
+            keyActivated = true;
+        }
     }
 }
 
