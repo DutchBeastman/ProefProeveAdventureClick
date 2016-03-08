@@ -115,12 +115,11 @@ namespace Utils
 			base.Update();
 			if (IsOnPoint())
 			{
-				Debug.Log("Do Open Drawer");
 				if (uiUsableObject != "")
 				{
-				GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
+					GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
 				}
-				//Debug.Log(uiUsableObject);
+			
                 inventory.RemoveInventoryItem(ItemId);
 
 			}
