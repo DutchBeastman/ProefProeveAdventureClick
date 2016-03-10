@@ -115,7 +115,7 @@ namespace Utils
 			base.Update();
 			if (IsOnPoint())
 			{
-				if (uiUsableObject != "")
+				if (uiUsableObject != "" )
 				{
 					GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
 				}
