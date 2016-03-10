@@ -5,28 +5,20 @@ using UnityEngine.UI;
 
 public class InteractableObject : Click {
 
+	[SerializeField]
 	private Text dialogueText;
 	[SerializeField]
 	string objectText;
-	// Use this for initialization
-	protected override void Awake() 
-	{
-		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Text>();
-	}
 
+	protected void Start()
+	{
+	
+	}
 	protected override void OnClick()
 	{
 		base.OnClick();
-        dialogueText.text = objectText;
-	}
-	protected override void OnClickRelease()
-	{
-		base.OnClickRelease();
-	}
-	protected override void Update()
-	{
-		
-		base.Update();
+		dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<Text>();
+		dialogueText.text = objectText;
 	}
 	protected virtual void OnItemUsed()
 	{
