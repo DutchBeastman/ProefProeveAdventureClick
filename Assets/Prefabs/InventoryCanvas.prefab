@@ -1810,15 +1810,13 @@ MonoBehaviour:
   clickArea: {fileID: 6110044}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11405872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1833,15 +1831,13 @@ MonoBehaviour:
   clickArea: {fileID: 6152746}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11406144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1856,15 +1852,13 @@ MonoBehaviour:
   clickArea: {fileID: 6108056}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11407762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1933,15 +1927,13 @@ MonoBehaviour:
   clickArea: {fileID: 6149136}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11409080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1983,15 +1975,13 @@ MonoBehaviour:
   clickArea: {fileID: 6107678}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11411012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2276,15 +2266,13 @@ MonoBehaviour:
   clickArea: {fileID: 6184912}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11429018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2461,15 +2449,13 @@ MonoBehaviour:
   clickArea: {fileID: 6162236}
   isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11439880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2511,15 +2497,13 @@ MonoBehaviour:
   clickArea: {fileID: 6110306}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11442590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2663,15 +2647,13 @@ MonoBehaviour:
   clickArea: {fileID: 6156480}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11449328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2686,15 +2668,13 @@ MonoBehaviour:
   clickArea: {fileID: 6159866}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11451124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2709,15 +2689,13 @@ MonoBehaviour:
   clickArea: {fileID: 6111470}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11452148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2892,15 +2870,13 @@ MonoBehaviour:
   clickArea: {fileID: 6105614}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11456118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2942,15 +2918,13 @@ MonoBehaviour:
   clickArea: {fileID: 6181100}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11457372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3073,15 +3047,13 @@ MonoBehaviour:
   clickArea: {fileID: 6161982}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11461316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3096,15 +3068,13 @@ MonoBehaviour:
   clickArea: {fileID: 6159512}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11462028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3119,15 +3089,13 @@ MonoBehaviour:
   clickArea: {fileID: 6194324}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11462280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3196,15 +3164,13 @@ MonoBehaviour:
   clickArea: {fileID: 6136438}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11464556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3219,15 +3185,13 @@ MonoBehaviour:
   clickArea: {fileID: 6167748}
   isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 11452358}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
-  distanceToPoint: 5
+  distanceToPoint: 1.36
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11465086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3366,15 +3330,13 @@ MonoBehaviour:
   clickArea: {fileID: 6167064}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11472518
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3389,15 +3351,13 @@ MonoBehaviour:
   clickArea: {fileID: 6181630}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11473288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3412,15 +3372,13 @@ MonoBehaviour:
   clickArea: {fileID: 6163520}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11474114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3624,15 +3582,13 @@ MonoBehaviour:
   clickArea: {fileID: 6130718}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11478332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3647,15 +3603,13 @@ MonoBehaviour:
   clickArea: {fileID: 6105734}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11479352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3751,15 +3705,13 @@ MonoBehaviour:
   clickArea: {fileID: 6198776}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11480978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3936,15 +3888,13 @@ MonoBehaviour:
   clickArea: {fileID: 6129334}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11484912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3959,15 +3909,13 @@ MonoBehaviour:
   clickArea: {fileID: 6175444}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11485412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4036,15 +3984,13 @@ MonoBehaviour:
   clickArea: {fileID: 6157564}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11488184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4086,15 +4032,13 @@ MonoBehaviour:
   clickArea: {fileID: 6115582}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11490610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4188,15 +4132,13 @@ MonoBehaviour:
   clickArea: {fileID: 6129586}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11495282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4211,15 +4153,13 @@ MonoBehaviour:
   clickArea: {fileID: 6184828}
   isUIElement: 0
   originalPos: {x: 0, y: 0, z: 0}
-  mapImage: {fileID: 0}
-  canvasWidth: 1920
-  canvasHeight: 1080
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
   distanceToPoint: 2
   itemName: 
   itemId: 0
   numberOfUsages: 0
+  uiUsableObject: 
 --- !u!114 &11495334
 MonoBehaviour:
   m_ObjectHideFlags: 1
