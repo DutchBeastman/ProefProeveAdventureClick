@@ -18,8 +18,11 @@ namespace Utils
 		private Color32 spriteTransparent = new Color32(255,255,255,0);
 
 		private Color32 lerpedColor;
-		private bool fadeIn;
-		private bool fadeOut;
+
+		[HideInInspector]
+		public bool fadeIn;
+		[HideInInspector]
+		public bool fadeOut;
 
 		protected virtual void Awake()
 		{
