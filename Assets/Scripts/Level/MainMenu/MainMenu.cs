@@ -4,10 +4,9 @@ using System.Collections;
 public class MainMenu : MonoBehaviour {
 
 	[SerializeField]private GameObject[] objectsToActivate;
-	// Use this for initialization
-	void Start () {
-	
-	}
+	[SerializeField]private GameObject optionsMenu;
+	[SerializeField]private GameObject extrasMenu;
+	[SerializeField]private GameObject mainMenu;
 
 	public void StartGame()
 	{
@@ -17,5 +16,25 @@ public class MainMenu : MonoBehaviour {
 			objectsToActivate[i].SetActive(true);
 		}
 		gameObject.SetActive(false);
+	}
+	public void Options()
+	{
+		mainMenu.SetActive(false);
+		optionsMenu.SetActive(true);
+	}
+	public void Extras()
+	{
+		mainMenu.SetActive(false);
+		extrasMenu.SetActive(true);
+	}
+	public void BackToMainMenu()
+	{
+		mainMenu.SetActive(true);
+		optionsMenu.SetActive(false);
+		extrasMenu.SetActive(false);
+    }
+	public void Quit()
+	{
+		Application.Quit();
 	}
 }
