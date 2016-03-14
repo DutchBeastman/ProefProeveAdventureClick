@@ -8,6 +8,7 @@ public class DialogueHandler : MonoBehaviour {
 	private Text dialogueText;
 	private bool textFound;
 	private Color originalColor;
+	[SerializeField]private Animator animationController;
 	// Use this for initialization
 	void Awake () {
 		if(dialogueText == null)
@@ -24,6 +25,7 @@ public class DialogueHandler : MonoBehaviour {
 		{
 			Invoke("StartFade", 2f);
 			textFound = false;
+			animationController.Play("DialogueBox");
 		}
 	}
 
@@ -37,6 +39,7 @@ public class DialogueHandler : MonoBehaviour {
 			dialogueText.color = originalColor;
 			textFound = true;
 			dialogueText.text = "";
+			animationController.Play("DialogueBoxDown");
 			return;
 		}
 		if (color.a != 0)
