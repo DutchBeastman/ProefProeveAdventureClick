@@ -15,12 +15,18 @@ public class GameBoardSwitch : Click {
 	protected override void OnClick()
 	{
 		base.OnClick();
-		fade.FadeIn();
-		Invoke("SwitchGameBoard" , 0.8f);
+		if (!fade.fadeIn && !fade.fadeOut)
+		{
+			fade.FadeIn();
+			Invoke("SwitchGameBoard" , 0.8f);
+		}
 	}
 	private void SwitchGameBoard()
 	{
-		manager.GotoGameboard(id);
-		fade.FadeOut();
+		if (!fade.fadeOut)
+		{
+			manager.GotoGameboard(id);
+			fade.FadeOut();
+		}
 	}
 }
