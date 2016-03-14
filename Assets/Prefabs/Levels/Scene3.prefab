@@ -48,7 +48,7 @@ GameObject:
   - 61: {fileID: 6170470}
   - 114: {fileID: 11430210}
   m_Layer: 0
-  m_Name: NextButton
+  m_Name: BackButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,6 +251,7 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 0
+  fade: {fileID: 0}
 --- !u!114 &11446126
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -266,6 +267,7 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 3
+  fade: {fileID: 0}
 --- !u!114 &11449056
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -281,6 +283,7 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 4
+  fade: {fileID: 0}
 --- !u!114 &11450880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -299,6 +302,8 @@ MonoBehaviour:
   itemId: 3
   numberOfUsages: 1
   target: {fileID: 0}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
 --- !u!212 &21200050
 SpriteRenderer:
   m_ObjectHideFlags: 1

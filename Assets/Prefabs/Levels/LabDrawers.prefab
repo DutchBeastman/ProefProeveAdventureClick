@@ -1801,7 +1801,8 @@ MonoBehaviour:
   clickArea: {fileID: 6117546}
   isUIElement: 0
   manager: {fileID: 0}
-  id: 2
+  id: 8
+  fade: {fileID: 0}
 --- !u!114 &11413890
 MonoBehaviour:
   m_ObjectHideFlags: 1

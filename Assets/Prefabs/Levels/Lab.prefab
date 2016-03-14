@@ -43,7 +43,7 @@ GameObject:
   - 61: {fileID: 6198122}
   - 114: {fileID: 11482282}
   m_Layer: 0
-  m_Name: NextButtonPharmacy (1)
+  m_Name: NextButtonCloset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -66,7 +66,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &197920
 GameObject:
   m_ObjectHideFlags: 0
@@ -79,7 +79,7 @@ GameObject:
   - 114: {fileID: 11458048}
   - 60: {fileID: 6058426}
   m_Layer: 0
-  m_Name: NextButtonPharmacy (2)
+  m_Name: NextButtonDrawers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +210,8 @@ MonoBehaviour:
   clickArea: {fileID: 6058426}
   isUIElement: 0
   manager: {fileID: 0}
-  id: 3
+  id: 10
+  fade: {fileID: 0}
 --- !u!114 &11482282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -225,7 +226,8 @@ MonoBehaviour:
   clickArea: {fileID: 6198122}
   isUIElement: 0
   manager: {fileID: 0}
-  id: 0
+  id: 11
+  fade: {fileID: 0}
 --- !u!114 &11485876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -241,6 +243,7 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 5
+  fade: {fileID: 0}
 --- !u!212 &21261974
 SpriteRenderer:
   m_ObjectHideFlags: 1
