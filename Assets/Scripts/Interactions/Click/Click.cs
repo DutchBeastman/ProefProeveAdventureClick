@@ -73,12 +73,11 @@ namespace Utils
 		{
 			isClicked = isClicked ? false : true;
 		}
-		protected void OnEnable()
+		protected virtual void OnEnable()
 		{
 			if (clickArea == null)
 			{
 				clickArea = gameObject.GetComponent<Collider2D>();
-				Debug.LogWarning(clickArea);
 			}
 		}
 	}
