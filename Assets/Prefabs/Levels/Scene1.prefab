@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21245082}
   - 61: {fileID: 6175438}
   - 114: {fileID: 11428370}
+  - 114: {fileID: 11413982}
   m_Layer: 0
   m_Name: NextButtonToTable
   m_TagString: Untagged
@@ -45,6 +46,7 @@ GameObject:
   - 212: {fileID: 21290564}
   - 61: {fileID: 6163170}
   - 114: {fileID: 11455988}
+  - 114: {fileID: 11493400}
   m_Layer: 0
   m_Name: NextButtonToGreenhouse
   m_TagString: Untagged
@@ -63,6 +65,7 @@ GameObject:
   - 212: {fileID: 21267444}
   - 61: {fileID: 6172900}
   - 114: {fileID: 11415124}
+  - 114: {fileID: 11450740}
   m_Layer: 0
   m_Name: NextButtonToInzoom
   m_TagString: Untagged
@@ -81,6 +84,7 @@ GameObject:
   - 212: {fileID: 21287178}
   - 61: {fileID: 6158266}
   - 114: {fileID: 11472766}
+  - 114: {fileID: 11436744}
   m_Layer: 0
   m_Name: NextButtonToLab
   m_TagString: Untagged
@@ -236,6 +240,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.21, y: 0.06}
+--- !u!114 &11413982
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 132244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11415124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,6 +286,34 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 7
   fade: {fileID: 0}
+--- !u!114 &11436744
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
+--- !u!114 &11450740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11455988
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,6 +346,20 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 8
   fade: {fileID: 0}
+--- !u!114 &11493400
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!212 &21245082
 SpriteRenderer:
   m_ObjectHideFlags: 1

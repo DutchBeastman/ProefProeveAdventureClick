@@ -26,6 +26,7 @@ GameObject:
   - 212: {fileID: 21290134}
   - 61: {fileID: 6121776}
   - 114: {fileID: 11461974}
+  - 114: {fileID: 11454260}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -164,6 +165,22 @@ MonoBehaviour:
   itemId: 1
   numberOfUsages: 300
   target: {fileID: 0}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
+--- !u!114 &11454260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11461974
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,6 +196,7 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 0
+  fade: {fileID: 0}
 --- !u!212 &21205778
 SpriteRenderer:
   m_ObjectHideFlags: 1

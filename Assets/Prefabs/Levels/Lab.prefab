@@ -42,6 +42,7 @@ GameObject:
   - 212: {fileID: 21299902}
   - 61: {fileID: 6198122}
   - 114: {fileID: 11482282}
+  - 114: {fileID: 11407944}
   m_Layer: 0
   m_Name: NextButtonCloset
   m_TagString: Untagged
@@ -60,6 +61,7 @@ GameObject:
   - 212: {fileID: 21261974}
   - 61: {fileID: 6123826}
   - 114: {fileID: 11485876}
+  - 114: {fileID: 11488426}
   m_Layer: 0
   m_Name: NextButtonPharmacy
   m_TagString: Untagged
@@ -78,6 +80,7 @@ GameObject:
   - 212: {fileID: 21266194}
   - 114: {fileID: 11458048}
   - 60: {fileID: 6058426}
+  - 114: {fileID: 11482774}
   m_Layer: 0
   m_Name: NextButtonDrawers
   m_TagString: Untagged
@@ -196,6 +199,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.12}
+--- !u!114 &11407944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11458048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -228,6 +245,20 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 11
   fade: {fileID: 0}
+--- !u!114 &11482774
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11485876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -244,6 +275,20 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 5
   fade: {fileID: 0}
+--- !u!114 &11488426
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!212 &21261974
 SpriteRenderer:
   m_ObjectHideFlags: 1

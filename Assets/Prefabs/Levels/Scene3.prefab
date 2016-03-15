@@ -29,6 +29,7 @@ GameObject:
   - 212: {fileID: 21200050}
   - 61: {fileID: 6143802}
   - 114: {fileID: 11446126}
+  - 114: {fileID: 11405212}
   m_Layer: 0
   m_Name: NextButtonToDryPlants
   m_TagString: Untagged
@@ -47,6 +48,7 @@ GameObject:
   - 212: {fileID: 21232988}
   - 61: {fileID: 6170470}
   - 114: {fileID: 11430210}
+  - 114: {fileID: 11453094}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -81,6 +83,7 @@ GameObject:
   - 212: {fileID: 21211444}
   - 61: {fileID: 6126822}
   - 114: {fileID: 11449056}
+  - 114: {fileID: 11400474}
   m_Layer: 0
   m_Name: NextButtonToFlowers
   m_TagString: Untagged
@@ -236,6 +239,34 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.16, y: 0.16}
+--- !u!114 &11400474
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 176868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
+--- !u!114 &11405212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 142166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11430210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -304,6 +335,20 @@ MonoBehaviour:
   target: {fileID: 0}
   usableObject: 
   finishedGameObject: {fileID: 0}
+--- !u!114 &11453094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!212 &21200050
 SpriteRenderer:
   m_ObjectHideFlags: 1

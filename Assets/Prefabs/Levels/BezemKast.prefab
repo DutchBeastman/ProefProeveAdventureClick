@@ -45,6 +45,7 @@ GameObject:
   - 212: {fileID: 21201230}
   - 61: {fileID: 6137790}
   - 114: {fileID: 11430130}
+  - 114: {fileID: 11440406}
   m_Layer: 0
   m_Name: NextButtonToLab
   m_TagString: Untagged
@@ -251,6 +252,7 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 8
+  fade: {fileID: 0}
 --- !u!114 &11430554
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -269,6 +271,22 @@ MonoBehaviour:
   itemId: 5
   numberOfUsages: 300
   target: {fileID: 0}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
+--- !u!114 &11440406
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 150620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11467722
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -287,6 +305,8 @@ MonoBehaviour:
   itemId: 4
   numberOfUsages: 300
   target: {fileID: 0}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
 --- !u!114 &11495618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -305,6 +325,8 @@ MonoBehaviour:
   itemId: 5
   numberOfUsages: 300
   target: {fileID: 0}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
 --- !u!212 &21201230
 SpriteRenderer:
   m_ObjectHideFlags: 1

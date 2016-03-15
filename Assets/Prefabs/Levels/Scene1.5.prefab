@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21231110}
   - 61: {fileID: 6119230}
   - 114: {fileID: 11406104}
+  - 114: {fileID: 11483028}
   m_Layer: 0
   m_Name: NextButton (1)
   m_TagString: Untagged
@@ -116,6 +117,21 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 5
+  fade: {fileID: 0}
+--- !u!114 &11483028
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!212 &21231110
 SpriteRenderer:
   m_ObjectHideFlags: 1

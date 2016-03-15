@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21287742}
   - 61: {fileID: 6192002}
   - 114: {fileID: 11458524}
+  - 114: {fileID: 11409592}
   m_Layer: 0
   m_Name: NextButtonToPharmacy
   m_TagString: Untagged
@@ -76,6 +77,7 @@ GameObject:
   - 212: {fileID: 21252286}
   - 61: {fileID: 6193578}
   - 114: {fileID: 11496632}
+  - 114: {fileID: 11476618}
   m_Layer: 0
   m_Name: NextButtonWorktable
   m_TagString: Untagged
@@ -94,6 +96,7 @@ GameObject:
   - 212: {fileID: 21282790}
   - 61: {fileID: 6120464}
   - 114: {fileID: 11403216}
+  - 114: {fileID: 11479912}
   m_Layer: 0
   m_Name: NextButtonPlants
   m_TagString: Untagged
@@ -235,6 +238,21 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 2
+  fade: {fileID: 0}
+--- !u!114 &11409592
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11458524
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -250,6 +268,35 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 5
+  fade: {fileID: 0}
+--- !u!114 &11476618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 181696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
+--- !u!114 &11479912
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11496632
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,6 +312,7 @@ MonoBehaviour:
   isUIElement: 0
   manager: {fileID: 0}
   id: 1
+  fade: {fileID: 0}
 --- !u!212 &21240302
 SpriteRenderer:
   m_ObjectHideFlags: 1
