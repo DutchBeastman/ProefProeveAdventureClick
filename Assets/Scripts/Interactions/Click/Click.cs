@@ -5,7 +5,7 @@ namespace Utils
 {
 	public class Click : MonoBehaviour
 	{
-		[SerializeField]private Collider2D clickArea;
+		[SerializeField]public Collider2D clickArea;
 		[SerializeField]private bool isUIElement;
 		private bool isClicked;
 
@@ -25,14 +25,13 @@ namespace Utils
 				return isClicked;
 			}
 		}
-
 		protected void OnDisable()
 		{
 			OnClickRelease();
 		}
 		protected virtual void Awake()
 		{
-
+			
 		}
 		protected virtual void Update()
 		{
@@ -73,6 +72,14 @@ namespace Utils
 		protected virtual void OnClick()
 		{
 			isClicked = isClicked ? false : true;
+		}
+		protected void OnEnable()
+		{
+			if (clickArea == null)
+			{
+				clickArea = gameObject.GetComponent<Collider2D>();
+				Debug.LogWarning(clickArea);
+			}
 		}
 	}
 }
