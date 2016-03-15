@@ -12,6 +12,11 @@ public class GameBoardSwitch : Click {
 		manager = FindObjectOfType<GameBoardManager>();
 		fade = FindObjectOfType<OverlayFade>();
 	}
+	protected override void OnEnable()
+	{
+		base.OnEnable();
+		fade = FindObjectOfType<OverlayFade>();
+	}
 	protected override void OnClick()
 	{
 		base.OnClick();
