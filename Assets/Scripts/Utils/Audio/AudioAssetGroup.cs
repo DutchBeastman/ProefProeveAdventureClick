@@ -69,7 +69,7 @@ namespace Utils
 						}
 						else
 						{
-							path = EditorUtility.SaveFilePanelInProject("Create AudioAssetGroup", "AudioAssetGroup", "asset", "Create a new AudioAssetGroup.");
+							path = EditorUtility.SaveFilePanelInProject("Create AudioAssetGroup", "AudioAssetGroup", "asset", "Create a nw AudioAssetGroup.");
 
 							if(string.IsNullOrEmpty(path))
 							{
