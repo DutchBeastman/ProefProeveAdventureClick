@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e31967814836c8428122e899426a777, type: 3}
   m_Name: footsteps
   m_EditorClassIdentifier: 
-  audioClip: {fileID: 8300000, guid: 2e0c55331f33a414aafb0539db8e4e8e, type: 3}
-  audioMixerGroup: {fileID: 24376872, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}
+  audioClip: {fileID: 8300000, guid: 6430bed7f4e14da4883dbc94ceed0354, type: 3}
+  audioMixerGroup: {fileID: 24300001, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}
   type: 0
   volume: 1
   pitch: 1

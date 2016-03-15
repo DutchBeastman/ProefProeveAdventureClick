@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: actie_goed
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 17c72712083680548a0335cd4b3a43c6, type: 3}
-  audioMixerGroup: {fileID: 0}
+  audioMixerGroup: {fileID: 24300001, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}
   type: 0
   volume: 1
   pitch: 1

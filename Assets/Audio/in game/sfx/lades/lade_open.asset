@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: lade_open
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: dea5d5b35ed5e5b4b962a04bc5e43b2b, type: 3}
-  audioMixerGroup: {fileID: 0}
+  audioMixerGroup: {fileID: 24300001, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}
   type: 0
   volume: 1
   pitch: 1

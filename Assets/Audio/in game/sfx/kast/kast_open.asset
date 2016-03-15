@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: kast_open
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 40c21e5f9e84b014f94508baaa45f9a1, type: 3}
-  audioMixerGroup: {fileID: 0}
+  audioMixerGroup: {fileID: 24300001, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}
   type: 0
   volume: 1
   pitch: 1

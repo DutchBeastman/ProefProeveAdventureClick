@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: fles_breken
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 0da0c1751515db744a915f00ff5a4e5e, type: 3}
-  audioMixerGroup: {fileID: 0}
+  audioMixerGroup: {fileID: 24300001, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}
   type: 0
   volume: 1
   pitch: 1

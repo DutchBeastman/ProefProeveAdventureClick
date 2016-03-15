@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioAssets:
   - {fileID: 11400000, guid: 3e1ded01fa0356940b69eca7fa169a84, type: 2}
-  audioMixerGroup: {fileID: 0}
+  audioMixerGroup: {fileID: 24300001, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}

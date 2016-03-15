@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Name: in_game_total
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: 817bedc56b834054494f1e353882c936, type: 3}
-  audioMixerGroup: {fileID: 0}
-  type: 0
+  audioMixerGroup: {fileID: 24300001, guid: e4c8f9fcde8d3734c9371046b96b8b93, type: 2}
+  type: 1
   volume: 1
   pitch: 1
   stereoPan: 0
