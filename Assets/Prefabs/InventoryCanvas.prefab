@@ -1860,7 +1860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6110044}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6152746}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -1902,7 +1902,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6108056}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -2011,15 +2011,15 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
+        m_MethodName: OnPauze
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6149136}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -2110,7 +2110,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6107678}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6184912}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -2632,7 +2632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6110306}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -2782,7 +2782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6156480}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -2803,7 +2803,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6159866}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -2824,7 +2824,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6111470}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3005,7 +3005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6105614}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3053,7 +3053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6181100}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3209,7 +3209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6161982}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3230,7 +3230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6159512}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3251,7 +3251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6194324}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3326,7 +3326,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6136438}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3492,7 +3492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6167064}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3540,7 +3540,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6181630}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3561,7 +3561,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6163520}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3771,7 +3771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6130718}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3792,7 +3792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6105734}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -3894,7 +3894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6198776}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -4077,7 +4077,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6129334}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -4098,7 +4098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6175444}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -4200,7 +4200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6157564}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -4248,7 +4248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6115582}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -4348,7 +4348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6129586}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
@@ -4369,7 +4369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6184828}
-  isUIElement: 0
+  isUIElement: 1
   originalPos: {x: 0, y: 0, z: 0}
   inventory: {fileID: 0}
   targetPoint: {fileID: 0}
