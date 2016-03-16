@@ -98,10 +98,18 @@ public class ClickableItem : Click
 	public void OnAddedToInventory()
 	{
 		gameObject.SetActive(false);
-		if(gameObject.name == "RecipePieceOne")
+		if(gameObject.name == "RecipePieceOne" && finishedGameObject != null)
 		{
-			finishedGameObject.SetActive(true);
+			EndGame();
 		}
 	}
 
+	private void EndGame()
+	{
+		finishedGameObject.SetActive(true);
+		GameObject gamecanvas = GameObject.Find("GameCanvas");
+		gamecanvas.SetActive(false);
+		GameObject dialogueCanvas = GameObject.Find("DialogueCanvas");
+		dialogueCanvas.SetActive(false);
+	}
 }
