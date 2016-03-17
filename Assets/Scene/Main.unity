@@ -808,6 +808,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a0aec66f5da9b64f9e30cf465125a6b, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &693575658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 693575660}
+  - 114: {fileID: 693575659}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &693575659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693575658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a463804a2d4c1741aa5614647b6ec56, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selection: {fileID: 11400000, guid: 2e047a7515a77e64783bf84bb98b9a65, type: 2}
+  playOnEnable: 1
+  loop: 1
+--- !u!4 &693575660
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 693575658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.0025539137, y: 1.8346467, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
 --- !u!1001 &775261597
 Prefab:
   m_ObjectHideFlags: 0
@@ -1460,10 +1502,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
-    - target: {fileID: 11458048, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
-      propertyPath: manager
-      value: 
-      objectReference: {fileID: 283432726}
     - target: {fileID: 11482282, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
       propertyPath: manager
       value: 
@@ -1473,6 +1511,10 @@ Prefab:
       value: 
       objectReference: {fileID: 425047767}
     - target: {fileID: 11485876, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 283432726}
+    - target: {fileID: 11458048, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
       propertyPath: manager
       value: 
       objectReference: {fileID: 283432726}
