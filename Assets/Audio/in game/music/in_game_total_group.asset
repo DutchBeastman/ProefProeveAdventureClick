@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f0fdfdf0941aa94fa74eead5ef0bc37, type: 3}
-  m_Name: AudioAssetGroup
+  m_Name: in_game_total_group
   m_EditorClassIdentifier: 
   audioAssets:
   - {fileID: 11400000, guid: 3e1ded01fa0356940b69eca7fa169a84, type: 2}

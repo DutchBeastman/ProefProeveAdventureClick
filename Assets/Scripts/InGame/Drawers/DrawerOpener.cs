@@ -17,9 +17,27 @@ public class DrawerOpener : Click {
         {
             return isClosed;
         }
+		set
+		{
+			isClosed = value;
+		}
     }
 
-    protected override void Awake()
+	protected override void Update()
+	{
+		base.Update();
+		if (isClosed)
+		{
+			spriteRend.sprite = closedDrawer;
+			//Debug.Log(isClosed);
+		}
+		else if(!isClosed)
+		{
+			spriteRend.sprite = openDrawer;
+		}
+	}
+
+	protected override void Awake()
     {
         base.Awake();
         isClosed = true;
