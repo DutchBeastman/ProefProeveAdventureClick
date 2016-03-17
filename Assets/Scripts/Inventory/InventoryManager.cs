@@ -9,6 +9,7 @@ namespace Utils
 
 		// Use this for initialization
 		public List<ClickableItem> items;
+		public List<ClickableItem> neededItems;
 		[SerializeField]private InventoryUI inventoryUI;
 		[SerializeField]private List<InventoryItem> inventoryItems;
 
@@ -16,12 +17,15 @@ namespace Utils
 		{
 			items = new List<ClickableItem>();
 		}
-
 		public void AddInventoryItem(ClickableItem item)
 		{
 			items.Add(item);
 			item.OnAddedToInventory();
 			inventoryUI.UpdateInventory();
+			if (items.Contains(neededItems[0]))
+			{
+				GlobalEvents.Invoke(new WinEvent());
+			}
 		}
 
 		public void RemoveInventoryItem(int itemID)
