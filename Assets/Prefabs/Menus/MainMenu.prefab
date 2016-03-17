@@ -129,7 +129,7 @@ GameObject:
   - 222: {fileID: 22269484}
   - 114: {fileID: 11467362}
   - 114: {fileID: 11419064}
-  - 114: {fileID: 11407934}
+  - 114: {fileID: 11455138}
   m_Layer: 5
   m_Name: StartButton
   m_TagString: Untagged
@@ -286,20 +286,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &11407934
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 148580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickArea: {fileID: 0}
-  isUIElement: 1
-  audioAsset: {fileID: 11400000, guid: 646ce6a42cbd8f94e97c6b92880d2946, type: 2}
 --- !u!114 &11412350
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -412,6 +398,30 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11455138}
+        m_MethodName: PlayAudio
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 2ffc732cdf5f34240923305502e750de,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Utils.AudioAsset, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 11455138}
+        m_MethodName: PlayAudio
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 69a54b1a17eca6b4b9df1fd8e9258dc1,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: Utils.AudioAsset, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -691,6 +701,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &11455138
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 148580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f5f463d28028c34190a387ce20a749b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11457006
 MonoBehaviour:
   m_ObjectHideFlags: 1
