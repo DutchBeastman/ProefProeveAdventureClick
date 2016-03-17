@@ -11,10 +11,6 @@ public class PharmacyDrawer : InteractableObject {
 		base.Awake();
 
 	}
-	protected void Start()
-	{
-
-	}
 	protected override void OnClick()
 	{
 		if (!activated)
