@@ -345,6 +345,7 @@ GameObject:
   - 222: {fileID: 22236908}
   - 114: {fileID: 11459726}
   - 114: {fileID: 11408364}
+  - 114: {fileID: 11479732}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -597,7 +598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &143378
 GameObject:
   m_ObjectHideFlags: 1
@@ -2010,8 +2011,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: OnPauze
+      - m_Target: {fileID: 11479732}
+        m_MethodName: ActivatePause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3828,6 +3829,17 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &11479732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f87ec2fa069837c4fbc16307175ccfab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11479882
 MonoBehaviour:
   m_ObjectHideFlags: 1
