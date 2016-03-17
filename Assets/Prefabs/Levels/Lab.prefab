@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfa0b9d735b14a64182c084ad609b8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickArea: {fileID: 0}
+  clickArea: {fileID: 6198122}
   isUIElement: 0
   audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
 --- !u!114 &11458048
@@ -375,7 +375,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2057039461
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 487906177a2f351479c2a5b6fd264d78, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f3b158f5b0ee68e4ca8c93c3007d2a2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
