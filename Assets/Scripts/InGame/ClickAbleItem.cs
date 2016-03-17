@@ -114,6 +114,6 @@ public class ClickableItem : Click
 
 
 		//fire pauze event
-		GlobalEvents.Invoke(new PauzeEvent());
+		GlobalEvents.Invoke(new PauzeEvent("pauze"));
 	}
 }
