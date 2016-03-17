@@ -1,32 +1,41 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Utils;
+public class PauzeBehaviour : MonoBehaviour
+{
 
-public class PauzeBehaviour : MonoBehaviour {
+	private Collider2D[] colliders;
 
-	public Collider colliderz;
-	public Collider2D[] colliders;
-
-	/// <summary>
-	/// Finds all colliders active in the scene and disables them.
-	/// </summary>
-	public void OnPauze()
+	protected void OnEnable()
 	{
-		colliders = FindObjectsOfType<Collider2D>() as Collider2D[];
-		for (int i = 0; i < colliders.Length; i++)
-		{
-			colliders[i].enabled = false;
-		}
+		GlobalEvents.AddListener<PauzeEvent>(OnPauzeEvent);
+	}
+
+	protected void OnDisable()
+	{
+		GlobalEvents.RemoveListener<PauzeEvent>(OnPauzeEvent);
 	}
 
 	/// <summary>
-	/// enables the found colliders in the scene.
+	/// checks the event state and resumes or pauzes accordingly.
 	/// </summary>
-	public void OnResume()
+	/// <param name="evt">event sent</param>
+	public void OnPauzeEvent(PauzeEvent evt)
 	{
-		for (int i = 0; i < colliders.Length; i++)
+		if(evt.state == PauzeEvent.STATES.pauze)
 		{
-			colliders[i].enabled = true;
+			colliders = FindObjectsOfType<Collider2D>() as Collider2D[];
+			for (int i = 0; i < colliders.Length; i++)
+			{
+				colliders[i].enabled = false;
+			}
+		}
+		else if(evt.state == PauzeEvent.STATES.resume)
+		{
+			for (int i = 0; i < colliders.Length; i++)
+			{
+				colliders[i].enabled = true;
+			}
 		}
 	}
-
 }

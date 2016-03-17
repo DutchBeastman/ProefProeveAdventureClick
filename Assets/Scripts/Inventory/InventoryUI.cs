@@ -17,7 +17,6 @@ namespace Utils
 				uiItems[i].ItemName = inventory.items[i].ItemName;
 				uiItems[i].NumberOfUsages = inventory.items[i].NumberOfUsages;
 				uiItems[i].ItemImage = inventory.items[i].ItemImage;
-				Debug.Log(inventory.items[i].Target);
 				uiItems[i].TargetPoint = inventory.items[i].Target;
 				uiItems[i].UiUsableObject = inventory.items[i].UsableObject;
 				uiItems[i].OnItemsSet();

@@ -118,10 +118,10 @@ namespace Utils
 				if (uiUsableObject != "" )
 				{
 					GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
+					OnClickRelease();
 				}
 			
                 inventory.RemoveInventoryItem(ItemId);
-
 			}
 		}
 
@@ -147,7 +147,6 @@ namespace Utils
 		{
 			if (targetPoint != null)
 			{
-				
 				Vector3 point = Camera.main.ScreenToWorldPoint(transform.position);
 				point.z += 10;
 				Vector3 offset = targetPoint.position - point;

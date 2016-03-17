@@ -79,7 +79,7 @@ public class ClickableItem : Click
 		{
 			inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<InventoryManager>();
 		}
-
+		
 	}
 
 	protected override void OnClick()
@@ -111,5 +111,9 @@ public class ClickableItem : Click
 		gamecanvas.SetActive(false);
 		GameObject dialogueCanvas = GameObject.Find("DialogueCanvas");
 		dialogueCanvas.SetActive(false);
+
+
+		//fire pauze event
+		GlobalEvents.Invoke(new PauzeEvent("pauze"));
 	}
 }
