@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using Utils;
 
 [RequireComponent(typeof(Text))]
 public class DialogueHandler : MonoBehaviour {
@@ -18,8 +19,20 @@ public class DialogueHandler : MonoBehaviour {
 			originalColor = dialogueText.color;
 		}
 	}
-	
+	protected void OnEnable()
+	{
+		GlobalEvents.AddListener<DialogueEvent>(SetText);
+	}
+
+	protected void OnDisable()
+	{
+		GlobalEvents.RemoveListener<DialogueEvent>(SetText);
+	}
 	// Update is called once per frame
+	private void SetText(DialogueEvent evt)
+	{
+		dialogueText.text = evt.dialoguetext;
+    }
 	void Update () {
 		if (dialogueText.text != "" && textFound == true)
 		{
