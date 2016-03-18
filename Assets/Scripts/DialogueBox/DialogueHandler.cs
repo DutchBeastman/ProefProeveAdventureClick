@@ -7,15 +7,15 @@ using Utils;
 public class DialogueHandler : MonoBehaviour {
 
 	private Text dialogueText;
-	private bool textFound;
 	private Color originalColor;
+	private bool isPlaying;
 	[SerializeField]private Animator animationController;
+	private int timer;
 	// Use this for initialization
 	void Awake () {
 		if(dialogueText == null)
 		{ 
 			dialogueText = GetComponent<Text>();
-			textFound = true;
 			originalColor = dialogueText.color;
 		}
 	}
@@ -33,38 +33,34 @@ public class DialogueHandler : MonoBehaviour {
 	{
 		dialogueText.text = evt.dialoguetext;
 		dialogueText.color = originalColor;
-		Invoke("StartFade", 2f);
-		textFound = false;
-		animationController.Play("DialogueBox");
-	}
-	void Update () {
-	//	if (dialogueText.text != "" && textFound == true)
-		//{
-	//		Invoke("StartFade", 2f);
-	//		textFound = false;
-	//		animationController.Play("DialogueBox");
-	//	}
+		if (!isPlaying) {
+			StartFade();
+			animationController.Play("DialogueBox");
+			isPlaying = true;
+		}
 	}
 
 	private void StartFade()
 	{
 		Color color = dialogueText.color;
-		color.a -= 0.1f;
-		dialogueText.color = color;
-
-		if(color.a <= 0) {
-			dialogueText.color = originalColor;
-			textFound = true;
-			dialogueText.text = "";
-			animationController.SetBool("GoingDown", true);
-			Debug.Log("goingdown");
-			return;
+		if (timer >= 8)
+		{ 
+			
+			color.a -= 0.1f;
+			dialogueText.color = color;
+			if (color.a <= 0) {
+				dialogueText.color = originalColor;
+				isPlaying = false;
+				dialogueText.text = "";
+				timer = 0;
+				return;
+			}
 		}
 		if (color.a != 0)
 		{
-			Debug.Log("staying");
-			animationController.SetBool("Staying", true);
+			isPlaying = true;
 			Invoke("StartFade", 0.1f);
+			timer++;
 		}
 	}
 }
