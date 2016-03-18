@@ -48,7 +48,7 @@ GameObject:
   - 114: {fileID: 11455988}
   - 114: {fileID: 11493400}
   m_Layer: 0
-  m_Name: NextButtonToGreenhouse
+  m_Name: NextButtonToLab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -328,7 +328,7 @@ MonoBehaviour:
   clickArea: {fileID: 6163170}
   isUIElement: 0
   manager: {fileID: 0}
-  id: 0
+  id: 8
   fade: {fileID: 0}
 --- !u!114 &11472766
 MonoBehaviour:
@@ -344,7 +344,7 @@ MonoBehaviour:
   clickArea: {fileID: 6158266}
   isUIElement: 0
   manager: {fileID: 0}
-  id: 8
+  id: 0
   fade: {fileID: 0}
 --- !u!114 &11493400
 MonoBehaviour:
