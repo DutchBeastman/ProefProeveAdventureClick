@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6192002}
   - 114: {fileID: 11458524}
   - 114: {fileID: 11409592}
+  - 114: {fileID: 11472808}
   m_Layer: 0
   m_Name: NextButtonToPharmacy
   m_TagString: Untagged
@@ -269,6 +270,20 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 5
   fade: {fileID: 0}
+--- !u!114 &11472808
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 111502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136ae86f93b270e4db5b7ba91b2b7b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 6192002}
+  isUIElement: 0
+  textToSend: Pharmacy
 --- !u!114 &11476618
 MonoBehaviour:
   m_ObjectHideFlags: 1
