@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
+using Utils;
 
-	public enum Cursor
+	public enum CursorState
 	{
 		Door,
 		Normal,
@@ -11,19 +12,19 @@ using System.Collections;
 
 public class CursorChanger : MonoBehaviour {
 
-	public Cursor cursor;
-
+	[SerializeField]
+	private CursorState cursor;
 
 	void OnMouseEnter()
 	{
-		
-	}
-	void OnMouseOver()
+		GlobalEvents.Invoke(new CursorEvent(cursor));
+    }
+	void OnDisable()
 	{
-		
+		GlobalEvents.Invoke(new CursorEvent(CursorState.Normal));
 	}
 	void OnMouseExit()
 	{
-		
+		GlobalEvents.Invoke(new CursorEvent(CursorState.Normal));
 	}
 }
