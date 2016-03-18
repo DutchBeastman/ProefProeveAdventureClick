@@ -11,6 +11,7 @@ GameObject:
   - 114: {fileID: 11436688}
   - 114: {fileID: 11480550}
   - 114: {fileID: 11433344}
+  - 114: {fileID: 11408310}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -30,6 +31,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &11408310
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2f5c2254deb3f74a83e25ca18cda461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartDialogueTexts:
+  - lmmoooee1
+  - iddoomooee2
+  - issyoukno3
+  - wowowow4
+  - khadaym5 end.
 --- !u!114 &11433344
 MonoBehaviour:
   m_ObjectHideFlags: 1

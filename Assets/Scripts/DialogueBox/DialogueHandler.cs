@@ -42,11 +42,12 @@ public class DialogueHandler : MonoBehaviour {
 
 	private void StartFade()
 	{
+	
 		Color color = dialogueText.color;
-		if (timer >= 8)
-		{ 
+		if (timer >= 4)
+		{
 			
-			color.a -= 0.1f;
+			color.a -= 0.05f;
 			dialogueText.color = color;
 			if (color.a <= 0) {
 				dialogueText.color = originalColor;
