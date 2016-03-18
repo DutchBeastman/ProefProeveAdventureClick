@@ -47,6 +47,7 @@ GameObject:
   - 61: {fileID: 6163170}
   - 114: {fileID: 11455988}
   - 114: {fileID: 11493400}
+  - 114: {fileID: 11420438}
   m_Layer: 0
   m_Name: NextButtonToLab
   m_TagString: Untagged
@@ -85,6 +86,7 @@ GameObject:
   - 61: {fileID: 6158266}
   - 114: {fileID: 11472766}
   - 114: {fileID: 11436744}
+  - 114: {fileID: 11462300}
   m_Layer: 0
   m_Name: NextButtonToLab
   m_TagString: Untagged
@@ -270,6 +272,20 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 6
   fade: {fileID: 0}
+--- !u!114 &11420438
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136ae86f93b270e4db5b7ba91b2b7b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  textToSend: Greenhouse
 --- !u!114 &11428370
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -330,6 +346,20 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 8
   fade: {fileID: 0}
+--- !u!114 &11462300
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 179388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 136ae86f93b270e4db5b7ba91b2b7b4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  textToSend: Lab
 --- !u!114 &11472766
 MonoBehaviour:
   m_ObjectHideFlags: 1

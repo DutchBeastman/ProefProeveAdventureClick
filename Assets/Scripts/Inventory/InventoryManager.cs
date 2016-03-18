@@ -11,7 +11,6 @@ namespace Utils
 		public List<ClickableItem> items;
 		public List<ClickableItem> neededItems;
 		[SerializeField]private InventoryUI inventoryUI;
-		[SerializeField]private List<InventoryItem> inventoryItems;
 
 		protected void Awake()
 		{

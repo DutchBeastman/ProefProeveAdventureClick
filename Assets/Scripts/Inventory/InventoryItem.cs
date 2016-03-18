@@ -108,7 +108,6 @@ namespace Utils
 			{
 					inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<InventoryManager>();
 			}
-			
 		}
 		protected override void Update()
 		{
@@ -120,7 +119,6 @@ namespace Utils
 					GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
 					OnClickRelease();
 				}
-			
                 inventory.RemoveInventoryItem(ItemId);
 			}
 		}
@@ -133,6 +131,10 @@ namespace Utils
 		{
 			GetComponent<Image>().sprite = ItemImage;
 			IsActive = true;
+			Invoke("SetNewPosition", 0.5f);
+		}
+		private void SetNewPosition()
+		{
 			gameObject.SetActive(true);
 			originalPos = transform.position;
 		}
