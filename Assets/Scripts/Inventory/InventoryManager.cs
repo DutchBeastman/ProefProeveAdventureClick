@@ -22,10 +22,10 @@ namespace Utils
 			items.Add(item);
 			item.OnAddedToInventory();
 			inventoryUI.UpdateInventory();
-			if (items.Contains(neededItems[0]))
-			{
-				GlobalEvents.Invoke(new WinEvent());
-			}
+			//if (items.Contains(neededItems[0]))
+			//{
+			//	GlobalEvents.Invoke(new WinEvent());
+			//}
 		}
 
 		public void RemoveInventoryItem(int itemID)
@@ -44,7 +44,6 @@ namespace Utils
 		{
 			for (int i = 0; i < items.Count; i++)
 			{
-				Debug.Log(items[0].ItemName);
 			}
 		}
 
