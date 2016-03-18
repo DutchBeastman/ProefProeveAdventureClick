@@ -16,6 +16,5 @@ public class PlayAudioUI : MonoBehaviour {
 	public void PlayAudio(AudioAsset audio)
 	{
 		audioManager.Play(audio);
-		Debug.Log(audioAsset);
 	}
 }

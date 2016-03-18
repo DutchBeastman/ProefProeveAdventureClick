@@ -30,7 +30,6 @@ public class DrawerManager : MonoBehaviour
             if (markedOnes.IsClosed == false)
             {
                 i++;
-                Debug.Log(i);
             }
         }
         if (i == markedDrawers.Length)
@@ -45,7 +44,6 @@ public class DrawerManager : MonoBehaviour
 		{
 			if (!openDrawer.IsClosed)
 			{
-				Debug.Log("J =   " +   j);
 				j++;
 				if (j > 4)
 				{

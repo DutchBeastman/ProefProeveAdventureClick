@@ -62,14 +62,12 @@ namespace Utils
 			fadeIn = false;
 			fadeOut = true;
 			lerpTimer = 0;
-			Debug.Log("FadeOut");
 		}
 		public void FadeIn()
 		{
 			fadeOut = false;
 			fadeIn = true;
 			lerpTimer = 0;
-			Debug.Log("FadeIn");
 		}
 	}
 }

@@ -25,7 +25,6 @@ public class PharmacyDrawer : InteractableObject {
 	protected override void OnItemUsed()
 	{
 		base.OnItemUsed();
-		Debug.Log("itemIsUsed");
 		itemToActivate.SetActive(true);
 		GetComponent<SpriteRenderer>().sprite = imageAfterActivation;
 		activated = true;

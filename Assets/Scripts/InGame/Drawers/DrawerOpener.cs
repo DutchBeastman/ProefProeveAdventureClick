@@ -28,8 +28,7 @@ public class DrawerOpener : Click {
 		base.Update();
 		if (isClosed)
 		{
-			spriteRend.sprite = closedDrawer;
-			//Debug.Log(isClosed);
+			spriteRend.sprite = closedDrawer;;
 		}
 		else if(!isClosed)
 		{
