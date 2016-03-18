@@ -47,6 +47,7 @@ GameObject:
   - 61: {fileID: 6140758}
   - 114: {fileID: 11492782}
   - 114: {fileID: 11427954}
+  - 114: {fileID: 11413268}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -80,6 +81,7 @@ GameObject:
   - 212: {fileID: 21273168}
   - 61: {fileID: 6139886}
   - 114: {fileID: 11483542}
+  - 114: {fileID: 11494174}
   m_Layer: 0
   m_Name: PharmacyDrawer
   m_TagString: Untagged
@@ -259,6 +261,18 @@ MonoBehaviour:
   target: {fileID: 0}
   usableObject: 
   finishedGameObject: {fileID: 114462}
+--- !u!114 &11413268
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 123224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 0
 --- !u!114 &11427954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,7 +300,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6139886}
   isUIElement: 0
-  dialogueText: {fileID: 0}
   objectText: I should find the key to open this drawer
   itemToActivate: {fileID: 118656}
   imageAfterActivation: {fileID: 21300000, guid: 174bfdeb6c11aa042bf3dc31d22909e3,
@@ -307,6 +320,18 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 5
   fade: {fileID: 0}
+--- !u!114 &11494174
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 182016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 3
 --- !u!212 &21202340
 SpriteRenderer:
   m_ObjectHideFlags: 1
