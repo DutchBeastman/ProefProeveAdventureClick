@@ -286,6 +286,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 813530247}
+    - target: {fileID: 151792, guid: 2c930c27f2892844c858ecbd14afb13a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2c930c27f2892844c858ecbd14afb13a, type: 2}
   m_IsPrefabParent: 0
@@ -579,6 +583,10 @@ Prefab:
     - target: {fileID: 142076, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
       propertyPath: m_Name
       value: GameCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 142076, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 812a75b3b39cb9f45959d7f7869313f4, type: 2}
@@ -1038,9 +1046,69 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 189124, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 473372, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 181696, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1127079837 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 181696, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
+  m_PrefabInternal: {fileID: 1127079836}
+--- !u!1 &1127079838 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 111502, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
+  m_PrefabInternal: {fileID: 1127079836}
+--- !u!1 &1127079839 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189124, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
+  m_PrefabInternal: {fileID: 1127079836}
+--- !u!114 &1127079840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127079837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 3
+--- !u!114 &1127079841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127079838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 0
+--- !u!114 &1127079842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1127079839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 3
 --- !u!114 &1182744238 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11465086, guid: 812a75b3b39cb9f45959d7f7869313f4,
@@ -1389,6 +1457,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 11485876, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
+      propertyPath: manager
+      value: 
+      objectReference: {fileID: 283432726}
     - target: {fileID: 11482282, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
       propertyPath: manager
       value: 
@@ -1397,10 +1469,6 @@ Prefab:
       propertyPath: fade
       value: 
       objectReference: {fileID: 425047767}
-    - target: {fileID: 11485876, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
-      propertyPath: manager
-      value: 
-      objectReference: {fileID: 283432726}
     - target: {fileID: 11458048, guid: 0fdf606a31629ed41b3fa7568652be82, type: 2}
       propertyPath: manager
       value: 
