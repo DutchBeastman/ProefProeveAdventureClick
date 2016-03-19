@@ -8,7 +8,7 @@ public class DialogueHandler : MonoBehaviour {
 
 	private Text dialogueText;
 	private Color originalColor;
-	private bool isPlaying;
+	[SerializeField]private bool isPlaying;
 	[SerializeField]private Animator animationController;
 	private int timer;
 	// Use this for initialization
@@ -32,8 +32,9 @@ public class DialogueHandler : MonoBehaviour {
 	private void SetText(DialogueEvent evt)
 	{
 		dialogueText.text = evt.dialoguetext;
-		dialogueText.color = originalColor;
+		
 		if (!isPlaying) {
+			dialogueText.color = originalColor;
 			StartFade();
 			animationController.Play("DialogueBox");
 			isPlaying = true;
