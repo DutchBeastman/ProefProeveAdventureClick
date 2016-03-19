@@ -4,7 +4,7 @@ namespace Utils
 {
 	public class Drag : Click
 	{
-		private bool isDragging;
+		protected bool isDragging;
 
 		private Vector3 moveToPos;
 		[HideInInspector]

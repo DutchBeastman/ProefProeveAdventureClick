@@ -16,10 +16,36 @@ namespace Utils
 		[SerializeField]private int itemId;
 		[SerializeField]private int numberOfUsages;
 		[SerializeField]private string uiUsableObject;
+		[SerializeField]private bool clickableInventoryItem;
+		[SerializeField]private Sprite showableImage;
 		private Sprite itemImage;
 		private bool isActive;
 
 		private Vector3 startPos;
+
+		public bool ClickableInventoryItem
+		{
+			get
+			{
+				return clickableInventoryItem;
+			}
+			set
+			{
+				clickableInventoryItem = value;
+			}
+		}
+
+		public Sprite ShowableImage
+		{
+			get
+			{
+				return showableImage;
+			}
+			set
+			{
+				showableImage = value;
+			}
+		}
 
 		public string UiUsableObject
 		{
@@ -112,6 +138,10 @@ namespace Utils
 		protected override void Update()
 		{
 			base.Update();
+			if(ClickableInventoryItem)
+			{
+				isDragging = false;
+			}
 			if (IsOnPoint())
 			{
 				if (uiUsableObject != "" )
@@ -126,6 +156,10 @@ namespace Utils
 		protected override void OnClick()
 		{
 			base.OnClick();
+			if(clickableInventoryItem && showableImage != null)
+			{
+				GlobalEvents.Invoke(new ShowImageEvent(showableImage));
+			}
 		}
 		public void OnItemsSet()
 		{

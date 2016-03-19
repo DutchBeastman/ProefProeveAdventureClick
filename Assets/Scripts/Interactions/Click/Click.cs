@@ -25,7 +25,7 @@ namespace Utils
 				return isClicked;
 			}
 		}
-		protected void OnDisable()
+		protected virtual void OnDisable()
 		{
 			OnClickRelease();
 		}

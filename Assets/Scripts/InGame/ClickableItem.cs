@@ -13,7 +13,33 @@ public class ClickableItem : Click
 	[SerializeField]private Transform target;
 	[SerializeField]private string usableObject;
 	[SerializeField]private GameObject finishedGameObject;
+	[SerializeField]private Sprite showableItemImage;
+	[SerializeField]private bool clickableItem;
 	private Sprite itemImage;
+
+	public bool ClickableIngameItem
+	{
+		get
+		{
+			return clickableItem;
+		}
+		set
+		{
+			clickableItem = value;
+		}
+	}
+
+	public Sprite ShowableItemImage
+	{
+		get
+		{
+			return showableItemImage;
+		}
+		set
+		{
+			showableItemImage = value;
+		}
+	}
 
 	public string UsableObject
 	{
@@ -100,7 +126,7 @@ public class ClickableItem : Click
 		gameObject.SetActive(false);
 		if(gameObject.name == "RecipePieceOne" && finishedGameObject != null)
 		{
-			EndGame();
+		//	EndGame();
 		}
 	}
 

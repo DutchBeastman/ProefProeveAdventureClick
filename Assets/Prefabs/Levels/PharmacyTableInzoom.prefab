@@ -68,7 +68,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &182016
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,6 +259,8 @@ MonoBehaviour:
   target: {fileID: 0}
   usableObject: 
   finishedGameObject: {fileID: 114462}
+  showableItemImage: {fileID: 21300000, guid: 316eea52fbe13ef4d9ffd206f02c75f6, type: 3}
+  clickableItem: 1
 --- !u!114 &11427954
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -286,7 +288,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickArea: {fileID: 6139886}
   isUIElement: 0
-  dialogueText: {fileID: 0}
   objectText: I should find the key to open this drawer
   itemToActivate: {fileID: 118656}
   imageAfterActivation: {fileID: 21300000, guid: 174bfdeb6c11aa042bf3dc31d22909e3,
