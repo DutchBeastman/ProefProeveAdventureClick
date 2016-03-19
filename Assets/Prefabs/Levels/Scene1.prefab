@@ -92,7 +92,7 @@ GameObject:
   - 114: {fileID: 11462300}
   - 114: {fileID: 11441798}
   m_Layer: 0
-  m_Name: NextButtonToLab
+  m_Name: NextButtonToGreenhouse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -301,7 +301,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickArea: {fileID: 0}
   isUIElement: 0
-  textToSend: Greenhouse
+  textToSend: Lab
 --- !u!114 &11428092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -411,7 +411,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickArea: {fileID: 0}
   isUIElement: 0
-  textToSend: Lab
+  textToSend: Greenhouse
 --- !u!114 &11472766
 MonoBehaviour:
   m_ObjectHideFlags: 1
