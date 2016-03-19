@@ -28,6 +28,7 @@ GameObject:
   - 114: {fileID: 11461974}
   - 114: {fileID: 11454260}
   - 114: {fileID: 11414508}
+  - 114: {fileID: 11499022}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -62,6 +63,7 @@ GameObject:
   - 212: {fileID: 21205778}
   - 114: {fileID: 11404206}
   - 61: {fileID: 6121422}
+  - 114: {fileID: 11485044}
   m_Layer: 0
   m_Name: Scissor
   m_TagString: Untagged
@@ -212,6 +214,30 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 0
   fade: {fileID: 0}
+--- !u!114 &11485044
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 194104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
+--- !u!114 &11499022
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 184680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 0
 --- !u!212 &21205778
 SpriteRenderer:
   m_ObjectHideFlags: 1

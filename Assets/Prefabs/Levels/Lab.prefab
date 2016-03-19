@@ -43,6 +43,7 @@ GameObject:
   - 61: {fileID: 6198122}
   - 114: {fileID: 11482282}
   - 114: {fileID: 11407944}
+  - 114: {fileID: 11448456}
   m_Layer: 0
   m_Name: NextButtonCloset
   m_TagString: Untagged
@@ -63,6 +64,7 @@ GameObject:
   - 114: {fileID: 11485876}
   - 114: {fileID: 11488426}
   - 114: {fileID: 11494646}
+  - 114: {fileID: 11411784}
   m_Layer: 0
   m_Name: NextButtonPharmacy
   m_TagString: Untagged
@@ -82,6 +84,7 @@ GameObject:
   - 114: {fileID: 11458048}
   - 60: {fileID: 6058426}
   - 114: {fileID: 11482774}
+  - 114: {fileID: 11421206}
   m_Layer: 0
   m_Name: NextButtonDrawers
   m_TagString: Untagged
@@ -148,8 +151,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197088}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.343, y: -0.376, z: 0}
-  m_LocalScale: {x: 1.9271967, y: 7.5521326, z: 1}
+  m_LocalPosition: {x: -1.19, y: 0.04, z: 0}
+  m_LocalScale: {x: 1.9271967, y: 17.07, z: 1}
   m_Children: []
   m_Father: {fileID: 486260}
   m_RootOrder: 0
@@ -214,6 +217,42 @@ MonoBehaviour:
   clickArea: {fileID: 6198122}
   isUIElement: 0
   audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
+--- !u!114 &11411784
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 0
+--- !u!114 &11421206
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 197920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 3
+--- !u!114 &11448456
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 0
 --- !u!114 &11458048
 MonoBehaviour:
   m_ObjectHideFlags: 1
