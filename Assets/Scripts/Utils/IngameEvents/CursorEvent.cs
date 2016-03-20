@@ -5,8 +5,6 @@ namespace Utils
 {
 	public class CursorEvent : IEvent
 	{
-
-
 		public CursorState currentcursorstate;
 		public CursorEvent(CursorState state)
 		{
