@@ -58,6 +58,7 @@ MonoBehaviour:
   clickArea: {fileID: 6137426}
   isUIElement: 0
   objectText: i should cut this plant with a scissor.
+  shouldNotShowDialogue: 0
 --- !u!212 &21267736
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -94,7 +95,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Name
+      value: InteractableObject
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 140414}

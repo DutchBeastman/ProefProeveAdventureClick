@@ -8,11 +8,11 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 499190}
-  - 114: {fileID: 11473734}
   - 212: {fileID: 21237200}
   - 61: {fileID: 6198350}
+  - 114: {fileID: 11401830}
   m_Layer: 0
-  m_Name: GrownPlant
+  m_Name: Ginger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -75,7 +75,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.0064843, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.835897, y: 5.1874633, z: 0.5187463}
   m_Children:
   - {fileID: 470324}
@@ -114,7 +114,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 110784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.48, y: 0.13, z: 0}
+  m_LocalPosition: {x: 1.175, y: -0.254, z: 0}
   m_LocalScale: {x: 0.10979694, y: 0.1654343, z: 1}
   m_Children: []
   m_Father: {fileID: 426732}
@@ -147,6 +147,28 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
+--- !u!114 &11401830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f34c411f02339224ca57ed0c9524c084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  inventory: {fileID: 0}
+  itemName: Ginger
+  itemId: 0
+  numberOfUsages: 300
+  target: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
+  showableItemImage: {fileID: 0}
+  clickableItem: 0
 --- !u!114 &11436002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -177,21 +199,6 @@ MonoBehaviour:
   clickArea: {fileID: 0}
   isUIElement: 0
   audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
---- !u!114 &11473734
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 110784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 84368ceb8c269f7428363e28f8d43e02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickArea: {fileID: 6198350}
-  isUIElement: 0
-  dialogueText: {fileID: 0}
-  objectText: i should cut this plant with a scissor.
 --- !u!212 &21230926
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -278,7 +285,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5cb344d14dde8a24f9d1a4c2f04b95d7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ee7da9a48f2dc70499ecfc5d00c3309a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -288,7 +295,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 142262}

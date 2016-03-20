@@ -21,6 +21,7 @@ namespace Utils
 				uiItems[i].UiUsableObject = inventory.items[i].UsableObject;
 				uiItems[i].ShowableImage = inventory.items[i].ShowableItemImage;
 				uiItems[i].ClickableInventoryItem = inventory.items[i].ClickableIngameItem;
+				uiItems[i].ThisClickableItem = inventory.items[i];
 				uiItems[i].OnItemsSet();
 			}
 			RemoveItems();
@@ -40,6 +41,7 @@ namespace Utils
 					uiItems[j].UiUsableObject = null;
 					uiItems[j].ShowableImage = null;
 					uiItems[j].ClickableInventoryItem = false;
+					uiItems[j].ThisClickableItem = null;
 					uiItems[j].OnItemsRemove();
 				}
 			}
