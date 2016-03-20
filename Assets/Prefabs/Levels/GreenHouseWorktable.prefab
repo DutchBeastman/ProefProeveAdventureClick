@@ -14,7 +14,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &184680
 GameObject:
   m_ObjectHideFlags: 0
@@ -167,9 +167,11 @@ MonoBehaviour:
   itemName: Scissor
   itemId: 1
   numberOfUsages: 300
-  target: {fileID: 0}
+  target: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
   usableObject: 
   finishedGameObject: {fileID: 0}
+  showableItemImage: {fileID: 0}
+  clickableItem: 0
 --- !u!114 &11414508
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -334,7 +336,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
+    - target: {fileID: 0}
+      propertyPath: usableObject
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 181204}

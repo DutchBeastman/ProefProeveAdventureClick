@@ -7,6 +7,7 @@ public class InteractableObject : Click {
 
 	[SerializeField]
 	string objectText;
+	public bool shouldNotShowDialogue;
 
 	protected void Start()
 	{
@@ -15,7 +16,10 @@ public class InteractableObject : Click {
 	protected override void OnClick()
 	{
 		base.OnClick();
+		if (!shouldNotShowDialogue)
+		{ 
 		GlobalEvents.Invoke(new DialogueEvent(objectText));
+		}
 	}
 	protected virtual void OnItemUsed()
 	{

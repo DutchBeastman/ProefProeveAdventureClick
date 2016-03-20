@@ -6,6 +6,6 @@ public class ClickableRecipePiece : ClickableItem {
     protected override void OnClick()
     {
         base.OnClick();
-        GlobalEvents.Invoke<RecipeEvent>();
+        //GlobalEvents.Invoke<RecipeEvent>();
     }
 }
