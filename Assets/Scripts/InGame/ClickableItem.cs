@@ -15,7 +15,10 @@ public class ClickableItem : Click
 	[SerializeField]private GameObject finishedGameObject;
 	[SerializeField]private Sprite showableItemImage;
 	[SerializeField]private bool clickableItem;
-	private Sprite itemImage;
+	[SerializeField]private Sprite itemImage;
+
+	[HideInInspector]
+	public bool shouldNotAdd;
 
 	public bool ClickableIngameItem
 	{
@@ -111,8 +114,10 @@ public class ClickableItem : Click
 	protected override void OnClick()
 	{
 		base.OnClick();
-		inventory.AddInventoryItem(this);
-
+		if (!shouldNotAdd)
+		{
+			inventory.AddInventoryItem(this);
+		}
 	}
 
 	protected override void OnClickRelease()
