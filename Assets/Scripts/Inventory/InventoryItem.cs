@@ -157,7 +157,15 @@ namespace Utils
 			}
 			if (IsOnPoint() && isUsable)
 			{
-				if(ItemName != "Scissor")
+				if (ItemName == "Key")
+				{
+					Debug.Log("TRIGGERED");
+					GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
+					OnClickRelease();
+					inventory.RemoveInventoryItem(ItemId);
+					return;
+				}
+				if (ItemName != "Scissor")
 				{
 					OnClickRelease();
 					inventory.RemoveInventoryItem(ItemId);
