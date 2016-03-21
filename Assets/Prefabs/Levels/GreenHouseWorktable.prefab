@@ -14,7 +14,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &184680
 GameObject:
   m_ObjectHideFlags: 0
@@ -27,7 +27,6 @@ GameObject:
   - 61: {fileID: 6121776}
   - 114: {fileID: 11461974}
   - 114: {fileID: 11454260}
-  - 114: {fileID: 11414508}
   - 114: {fileID: 11499022}
   m_Layer: 0
   m_Name: BackButton
@@ -167,25 +166,13 @@ MonoBehaviour:
   itemName: Scissor
   itemId: 1
   numberOfUsages: 300
-  target: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
+  target: {fileID: 0}
   usableObject: 
   finishedGameObject: {fileID: 0}
   showableItemImage: {fileID: 0}
   clickableItem: 0
---- !u!114 &11414508
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 184680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 136ae86f93b270e4db5b7ba91b2b7b4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickArea: {fileID: 0}
-  isUIElement: 0
-  textToSend: GreenHouse
+  itemImage: {fileID: 0}
+  shouldNotAdd: 0
 --- !u!114 &11454260
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -340,7 +327,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: target
       value: 
-      objectReference: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
+      objectReference: {fileID: 436870, guid: 6f661f4a23fd98b4889c1af7fb95e66f, type: 2}
     - target: {fileID: 0}
       propertyPath: usableObject
       value: 

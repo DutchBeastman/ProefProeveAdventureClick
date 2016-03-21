@@ -8,7 +8,7 @@ namespace Utils
 	{
 		private bool isPickedUp;
 		[SerializeField]private InventoryManager inventory;
-		[SerializeField]private Transform targetPoint;
+		[SerializeField]private GameObject targetPoint;
 		[SerializeField][Range(0.1f, 5f)]private float distanceToPoint = 2.0f;
 		[SerializeField]private string itemName;
 		[SerializeField]private int itemId;
@@ -69,7 +69,7 @@ namespace Utils
 			}
 		}
 
-		public Transform TargetPoint
+		public GameObject TargetPoint
 		{
 			get
 			{
@@ -157,15 +157,20 @@ namespace Utils
 			}
 			if (IsOnPoint() && isUsable)
 			{
-				Debug.Log("doit");
-				GlobalEvents.Invoke(new AddItemToMixerEvent(ThisClickableItem));
-				if (uiUsableObject != "" )
+				if(ItemName != "Scissor")
 				{
-					//GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
-				
 					OnClickRelease();
+					inventory.RemoveInventoryItem(ItemId);
+					GlobalEvents.Invoke(new AddItemToMixerEvent(ThisClickableItem));
 				}
-                inventory.RemoveInventoryItem(ItemId);
+				else
+				{
+					OnClickRelease();
+					inventory.RemoveInventoryItem(ItemId);
+					Debug.Log("fireCut");
+					GlobalEvents.Invoke(new CutPlantEvent());
+				}
+			
 			}
 		}
 
@@ -183,6 +188,7 @@ namespace Utils
 		/// </summary>
 		public void OnItemsSet()
 		{
+			Debug.Log("ay");
 			GetComponent<Image>().sprite = ItemImage;
 			IsActive = true;
 			isUsable = false;
@@ -218,11 +224,14 @@ namespace Utils
 		/// <returns></returns>
 		private bool IsOnPoint()
 		{
-			if (targetPoint != null)
+			if (GameObject.Find(TargetPoint.name) != null)
+				Debug.Log(TargetPoint.name);
+
+            if (targetPoint != null && GameObject.Find(TargetPoint.name) != null)
 			{
 				Vector3 point = Camera.main.ScreenToWorldPoint(transform.position);
 				point.z += 10;
-				Vector3 offset = targetPoint.position - point;
+				Vector3 offset = targetPoint.transform.position - point;
 				float sqrLen = offset.sqrMagnitude;
 				if (sqrLen < distanceToPoint * distanceToPoint)
 				{

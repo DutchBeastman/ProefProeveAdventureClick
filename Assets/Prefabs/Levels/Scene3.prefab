@@ -104,7 +104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &198220
 GameObject:
   m_ObjectHideFlags: 0
@@ -114,8 +114,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 436870}
   - 212: {fileID: 21288542}
-  - 114: {fileID: 11415650}
   - 61: {fileID: 6175788}
+  - 114: {fileID: 11458162}
+  - 114: {fileID: 11427832}
   m_Layer: 0
   m_Name: PepperPlant
   m_TagString: Untagged
@@ -154,7 +155,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 111888}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.029, y: 0.047, z: 0}
+  m_LocalPosition: {x: 1.029, y: 0.117, z: 0}
   m_LocalScale: {x: 0.2, y: 0.19999999, z: 1.9277245}
   m_Children:
   - {fileID: 461872}
@@ -179,7 +180,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.55, y: -0.678, z: 0}
+  m_LocalPosition: {x: -1.211, y: -0.113, z: 0}
   m_LocalScale: {x: 10.786814, y: 2.9750829, z: 1}
   m_Children: []
   m_Father: {fileID: 499586}
@@ -191,7 +192,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.101, y: -0.2, z: 0}
+  m_LocalPosition: {x: 1.263, y: -0.277, z: 0}
   m_LocalScale: {x: 5.4964633, y: 9.148387, z: 1}
   m_Children: []
   m_Father: {fileID: 499586}
@@ -203,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 186320}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.05, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5.7062097, y: 5.1874633, z: 0.5187463}
   m_Children:
   - {fileID: 436870}
@@ -224,9 +225,9 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.04}
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.14, y: 0.08}
 --- !u!61 &6151140
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -254,7 +255,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.06, y: 0.55}
 --- !u!61 &6175788
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -283,28 +284,6 @@ MonoBehaviour:
   clickArea: {fileID: 0}
   isUIElement: 0
   audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
---- !u!114 &11415650
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 198220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34c411f02339224ca57ed0c9524c084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickArea: {fileID: 6175788}
-  isUIElement: 0
-  inventory: {fileID: 0}
-  itemName: Pepper
-  itemId: 3
-  numberOfUsages: 1
-  target: {fileID: 0}
-  usableObject: 
-  finishedGameObject: {fileID: 0}
-  showableItemImage: {fileID: 0}
-  clickableItem: 0
 --- !u!114 &11417048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -329,6 +308,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: 3
+--- !u!114 &11427832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a14d7ef167c2b2419c1184d6620fe9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  inventory: {fileID: 0}
+  itemName: Pepper
+  itemId: 0
+  numberOfUsages: 300
+  target: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
+  showableItemImage: {fileID: 0}
+  clickableItem: 0
+  itemImage: {fileID: 21300000, guid: b0f77c851c90bcd4ab5a2bc5ee726245, type: 3}
+  shouldNotAdd: 0
 --- !u!114 &11430210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -383,6 +386,8 @@ MonoBehaviour:
   finishedGameObject: {fileID: 0}
   showableItemImage: {fileID: 0}
   clickableItem: 0
+  itemImage: {fileID: 0}
+  shouldNotAdd: 0
 --- !u!114 &11453094
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -397,6 +402,22 @@ MonoBehaviour:
   clickArea: {fileID: 0}
   isUIElement: 0
   audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
+--- !u!114 &11458162
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 198220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f70d525bc5c7894e8820b2f6ccfcccf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  objectText: I should cut this with a scissor
+  shouldNotShowDialogue: 0
+  pepperItem: {fileID: 11427832}
 --- !u!212 &21200050
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -587,6 +608,31 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: m_Name
       value: PlantsInzoomScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: itemId
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: numberOfUsages
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 476254, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
+    - target: {fileID: 0}
+      propertyPath: showableItemImage
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: itemImage
+      value: 
+      objectReference: {fileID: 21300000, guid: b0f77c851c90bcd4ab5a2bc5ee726245,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: pepperItem
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
