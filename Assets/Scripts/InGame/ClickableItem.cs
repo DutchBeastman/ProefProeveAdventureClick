@@ -10,7 +10,7 @@ public class ClickableItem : Click
 	[SerializeField]private string itemName;
 	[SerializeField]private int itemId;
 	[SerializeField]private int numberOfUsages;
-	[SerializeField]private Transform target;
+	[SerializeField]private GameObject target;
 	[SerializeField]private string usableObject;
 	[SerializeField]private GameObject finishedGameObject;
 	[SerializeField]private Sprite showableItemImage;
@@ -19,7 +19,7 @@ public class ClickableItem : Click
 
 	[HideInInspector]
 	public bool shouldNotAdd;
-
+	
 	public bool ClickableIngameItem
 	{
 		get
@@ -56,7 +56,7 @@ public class ClickableItem : Click
 		}
 	}
 
-	public Transform Target
+	public GameObject Target
 	{
 		get
 		{
@@ -108,7 +108,6 @@ public class ClickableItem : Click
 		{
 			inventory = GameObject.FindGameObjectWithTag("Inventory").GetComponent<InventoryManager>();
 		}
-		
 	}
 
 	protected override void OnClick()

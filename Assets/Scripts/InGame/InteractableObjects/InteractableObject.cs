@@ -9,10 +9,6 @@ public class InteractableObject : Click {
 	string objectText;
 	public bool shouldNotShowDialogue;
 
-	protected void Start()
-	{
-	
-	}
 	protected override void OnClick()
 	{
 		base.OnClick();

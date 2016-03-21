@@ -21,10 +21,6 @@ namespace Utils
 			items.Add(item);
 			item.OnAddedToInventory();
 			inventoryUI.UpdateInventory();
-			//if (items.Contains(neededItems[0]))
-			//{
-			//	GlobalEvents.Invoke(new WinEvent());
-			//}
 		}
 
 		public void RemoveInventoryItem(int itemID)
