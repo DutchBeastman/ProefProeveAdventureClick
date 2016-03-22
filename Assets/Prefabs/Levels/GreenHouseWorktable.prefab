@@ -211,7 +211,7 @@ MonoBehaviour:
   itemName: Scissor
   itemId: 1
   numberOfUsages: 300
-  target: {fileID: 0}
+  target: {fileID: 198220, guid: 6f661f4a23fd98b4889c1af7fb95e66f, type: 2}
   usableObject: 
   finishedGameObject: {fileID: 0}
   showableItemImage: {fileID: 0}
