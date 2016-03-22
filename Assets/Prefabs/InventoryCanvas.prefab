@@ -103,7 +103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &111792
 GameObject:
   m_ObjectHideFlags: 1
@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &112492
 GameObject:
   m_ObjectHideFlags: 1
@@ -437,7 +437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &128770
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &159562
 GameObject:
   m_ObjectHideFlags: 1
@@ -1870,6 +1870,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11405872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1891,6 +1894,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11406144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1912,6 +1918,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11407762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2072,6 +2081,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11409080
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2120,6 +2132,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11411012
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2411,6 +2426,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11429018
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2594,6 +2612,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11439880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2642,6 +2663,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11442590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2792,6 +2816,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11449328
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2813,6 +2840,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11451124
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2834,6 +2864,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11452148
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3015,6 +3048,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11456118
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3063,6 +3099,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11457372
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3219,6 +3258,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11461316
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3240,6 +3282,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11462028
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3261,6 +3306,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11462280
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3336,6 +3384,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11464556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3357,6 +3408,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11465086
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3502,6 +3556,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11470940
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3550,6 +3607,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11473288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3571,6 +3631,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11474114
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3781,6 +3844,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11478332
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3802,6 +3868,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11479352
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3915,6 +3984,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11480978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4098,6 +4170,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11484912
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4119,6 +4194,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11485412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4221,6 +4299,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11488184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4269,6 +4350,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11490610
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4369,6 +4453,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11495282
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4390,6 +4477,9 @@ MonoBehaviour:
   itemId: 0
   numberOfUsages: 0
   uiUsableObject: 
+  clickableInventoryItem: 0
+  showableImage: {fileID: 0}
+  thisClickableItem: {fileID: 0}
 --- !u!114 &11495334
 MonoBehaviour:
   m_ObjectHideFlags: 1
