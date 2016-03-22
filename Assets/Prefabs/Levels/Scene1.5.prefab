@@ -12,6 +12,7 @@ GameObject:
   - 61: {fileID: 6119230}
   - 114: {fileID: 11406104}
   - 114: {fileID: 11483028}
+  - 114: {fileID: 11487866}
   m_Layer: 0
   m_Name: NextButton (1)
   m_TagString: Untagged
@@ -57,8 +58,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 130568}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.35, y: -0.47, z: 0}
-  m_LocalScale: {x: 2.794326, y: 12.502562, z: 1}
+  m_LocalPosition: {x: -1.23, y: -0.2, z: 0}
+  m_LocalScale: {x: 2.63, y: 11.97, z: 1}
   m_Children: []
   m_Father: {fileID: 419236}
   m_RootOrder: 1
@@ -83,8 +84,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 155182}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: -0.053203363, y: 0.045219354, z: 1}
+  m_LocalPosition: {x: -0.01, y: -0, z: 0}
+  m_LocalScale: {x: 0.1785612, y: 0.1785612, z: 0.892806}
   m_Children: []
   m_Father: {fileID: 419236}
   m_RootOrder: 0
@@ -101,7 +102,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.21, y: 0.06}
+  m_Size: {x: 0.23, y: 0.13}
 --- !u!114 &11406104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -132,6 +133,18 @@ MonoBehaviour:
   clickArea: {fileID: 0}
   isUIElement: 0
   audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
+--- !u!114 &11487866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 130568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 0
 --- !u!212 &21231110
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -188,7 +201,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2057039461
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: c657cef842ccbca4ab281f46ace79910, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6bfafee6de0409241882296042c0ab08, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
