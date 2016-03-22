@@ -5,6 +5,7 @@ public class PharmacyDrawer : InteractableObject {
 
 	[SerializeField]private GameObject itemToActivate;
 	[SerializeField]private Sprite imageAfterActivation;
+	[SerializeField]private SpriteRenderer Background;
 	private bool activated;
     protected override void Awake()
 	{
@@ -26,7 +27,7 @@ public class PharmacyDrawer : InteractableObject {
 	{
 		base.OnItemUsed();
 		itemToActivate.SetActive(true);
-		GetComponent<SpriteRenderer>().sprite = imageAfterActivation;
+		Background.sprite = imageAfterActivation;
 		activated = true;
 	}
 }

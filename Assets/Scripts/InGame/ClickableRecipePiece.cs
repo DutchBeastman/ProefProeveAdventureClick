@@ -12,5 +12,6 @@ public class ClickableRecipePiece : ClickableItem {
     {
         base.OnClick();
 		GlobalEvents.Invoke(new RecipeEvent());
+		gameObject.SetActive(false);
     }
 }
