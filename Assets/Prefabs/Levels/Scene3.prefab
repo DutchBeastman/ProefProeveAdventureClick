@@ -70,7 +70,6 @@ GameObject:
   - 114: {fileID: 11446126}
   - 114: {fileID: 11405212}
   - 114: {fileID: 11423322}
-  - 114: {fileID: 11449768}
   m_Layer: 0
   m_Name: NextButtonToDryPlants
   m_TagString: Untagged
@@ -128,7 +127,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &189292
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +243,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152016}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.503, y: -0.727, z: 0}
+  m_LocalPosition: {x: -1.019, y: -0.727, z: 0}
   m_LocalScale: {x: 6.63, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 499586}
@@ -256,7 +255,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 142166}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.02, y: -0.62, z: 0}
+  m_LocalPosition: {x: 1.265, y: -0.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 499586}
@@ -444,7 +443,7 @@ MonoBehaviour:
   itemName: Willows bark
   itemId: 0
   numberOfUsages: 0
-  target: {fileID: 0}
+  target: {fileID: 171632, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
   usableObject: 
   finishedGameObject: {fileID: 0}
   showableItemImage: {fileID: 0}
@@ -521,7 +520,7 @@ MonoBehaviour:
   finishedGameObject: {fileID: 0}
   showableItemImage: {fileID: 0}
   clickableItem: 0
-  itemImage: {fileID: 21300000, guid: b0f77c851c90bcd4ab5a2bc5ee726245, type: 3}
+  itemImage: {fileID: 21300000, guid: f5f6920b0e7b8bf43903a9fddc91a484, type: 3}
   shouldNotAdd: 0
 --- !u!114 &11430210
 MonoBehaviour:
@@ -555,30 +554,6 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 3
   fade: {fileID: 0}
---- !u!114 &11449768
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 142166}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34c411f02339224ca57ed0c9524c084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickArea: {fileID: 0}
-  isUIElement: 0
-  inventory: {fileID: 0}
-  itemName: 
-  itemId: 0
-  numberOfUsages: 0
-  target: {fileID: 171632, guid: e3a605674da1fda44ab3ed4d28a6b714, type: 2}
-  usableObject: 
-  finishedGameObject: {fileID: 0}
-  showableItemImage: {fileID: 0}
-  clickableItem: 0
-  itemImage: {fileID: 0}
-  shouldNotAdd: 0
 --- !u!114 &11450880
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -903,7 +878,7 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: itemImage
       value: 
-      objectReference: {fileID: 21300000, guid: b0f77c851c90bcd4ab5a2bc5ee726245,
+      objectReference: {fileID: 21300000, guid: f5f6920b0e7b8bf43903a9fddc91a484,
         type: 3}
     - target: {fileID: 0}
       propertyPath: pepperItem
