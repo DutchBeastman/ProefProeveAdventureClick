@@ -65,7 +65,7 @@ public class ItemMixerBehaviour : MonoBehaviour {
 		}
 		if (shouldMix)
 		{
-			Debug.Log("yis");
+			GlobalEvents.Invoke(new WinEvent());
 		}
 		else
 		{
