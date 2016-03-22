@@ -11,6 +11,7 @@ GameObject:
   - 212: {fileID: 21292550}
   - 61: {fileID: 6193150}
   - 114: {fileID: 11429532}
+  - 114: {fileID: 11407328}
   m_Layer: 0
   m_Name: RecipePieceOne
   m_TagString: Untagged
@@ -29,6 +30,7 @@ GameObject:
   - 212: {fileID: 21237200}
   - 61: {fileID: 6198350}
   - 114: {fileID: 11401830}
+  - 114: {fileID: 11497942}
   m_Layer: 0
   m_Name: Sage
   m_TagString: Untagged
@@ -98,6 +100,7 @@ GameObject:
   - 212: {fileID: 21255750}
   - 61: {fileID: 6141948}
   - 114: {fileID: 11433490}
+  - 114: {fileID: 11471540}
   m_Layer: 0
   m_Name: Dried Pepper
   m_TagString: Untagged
@@ -132,6 +135,7 @@ GameObject:
   - 212: {fileID: 21297512}
   - 61: {fileID: 6162820}
   - 114: {fileID: 11444894}
+  - 114: {fileID: 11491596}
   m_Layer: 0
   m_Name: Clove
   m_TagString: Untagged
@@ -150,6 +154,7 @@ GameObject:
   - 212: {fileID: 21224982}
   - 61: {fileID: 6122534}
   - 114: {fileID: 11464730}
+  - 114: {fileID: 11405732}
   m_Layer: 0
   m_Name: Ginger
   m_TagString: Untagged
@@ -381,6 +386,30 @@ MonoBehaviour:
   clickableItem: 0
   itemImage: {fileID: 0}
   shouldNotAdd: 0
+--- !u!114 &11405732
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
+--- !u!114 &11407328
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110404}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
 --- !u!114 &11429532
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -519,6 +548,42 @@ MonoBehaviour:
   clickArea: {fileID: 0}
   isUIElement: 0
   audioAsset: {fileID: 11400000, guid: 70dcb599e80004c48abf2bdd54e623c7, type: 2}
+--- !u!114 &11471540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
+--- !u!114 &11491596
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 152608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
+--- !u!114 &11497942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
 --- !u!212 &21200090
 SpriteRenderer:
   m_ObjectHideFlags: 1
