@@ -1,40 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &114462
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 472730}
-  - 212: {fileID: 21237608}
-  - 95: {fileID: 9535414}
-  m_Layer: 0
-  m_Name: EndgameScreen
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!1 &118656
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
-  m_Component:
-  - 4: {fileID: 441770}
-  - 212: {fileID: 21202340}
-  - 114: {fileID: 11411098}
-  - 61: {fileID: 6117234}
-  m_Layer: 0
-  m_Name: RecipePieceOne
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!1 &123224
 GameObject:
   m_ObjectHideFlags: 0
@@ -55,6 +20,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &172086
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 414856}
+  - 212: {fileID: 21211892}
+  - 61: {fileID: 6182130}
+  - 114: {fileID: 11493618}
+  m_Layer: 0
+  m_Name: RecipePieceOne
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!1 &177086
 GameObject:
   m_ObjectHideFlags: 0
@@ -105,12 +88,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &441770
+--- !u!4 &414856
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118656}
+  m_GameObject: {fileID: 172086}
   m_LocalRotation: {x: 0, y: 0, z: -0.15107214, w: 0.98852277}
   m_LocalPosition: {x: 0.09, y: 0.258, z: 0}
   m_LocalScale: {x: 0.23874334, y: 0.2250775, z: 1}
@@ -129,9 +112,8 @@ Transform:
   m_Children:
   - {fileID: 463962}
   - {fileID: 453814}
-  - {fileID: 441770}
+  - {fileID: 414856}
   - {fileID: 483952}
-  - {fileID: 472730}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &453814
@@ -158,18 +140,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 445496}
   m_RootOrder: 0
---- !u!4 &472730
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114462}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.071, y: -0.015, z: 0}
-  m_LocalScale: {x: 0.16047159, y: 0.17742345, z: 1}
-  m_Children: []
-  m_Father: {fileID: 445496}
-  m_RootOrder: 4
 --- !u!4 &483952
 Transform:
   m_ObjectHideFlags: 1
@@ -182,20 +152,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 445496}
   m_RootOrder: 3
---- !u!61 &6117234
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118656}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
 --- !u!61 &6139886
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -224,47 +180,20 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 0.3, y: 0.17}
---- !u!95 &9535414
-Animator:
-  serializedVersion: 3
+--- !u!61 &6182130
+BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114462}
+  m_GameObject: {fileID: 172086}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d5e2e1e33ee2cb345ac1851f817b6d92, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &11411098
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118656}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f34c411f02339224ca57ed0c9524c084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clickArea: {fileID: 6117234}
-  isUIElement: 0
-  inventory: {fileID: 0}
-  itemName: Key
-  itemId: 0
-  numberOfUsages: 1
-  target: {fileID: 0}
-  usableObject: 
-  finishedGameObject: {fileID: 114462}
-  showableItemImage: {fileID: 21300000, guid: 316eea52fbe13ef4d9ffd206f02c75f6, type: 3}
-  clickableItem: 1
-  itemImage: {fileID: 0}
-  shouldNotAdd: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
 --- !u!114 &11413268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,9 +235,10 @@ MonoBehaviour:
   isUIElement: 0
   objectText: I should find the key to open this drawer
   shouldNotShowDialogue: 0
-  itemToActivate: {fileID: 118656}
+  itemToActivate: {fileID: 172086}
   imageAfterActivation: {fileID: 21300000, guid: ac69f3fda4053804aa9055eff5f245c4,
     type: 3}
+  Background: {fileID: 21268012}
 --- !u!114 &11492782
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -325,6 +255,30 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 5
   fade: {fileID: 0}
+--- !u!114 &11493618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 820aa3ae3e77935419567b6ddca94867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clickArea: {fileID: 0}
+  isUIElement: 0
+  inventory: {fileID: 0}
+  itemName: 
+  itemId: 0
+  numberOfUsages: 0
+  target: {fileID: 0}
+  usableObject: 
+  finishedGameObject: {fileID: 0}
+  showableItemImage: {fileID: 0}
+  clickableItem: 0
+  itemImage: {fileID: 0}
+  shouldNotAdd: 0
 --- !u!114 &11494174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,12 +291,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cursor: 3
---- !u!212 &21202340
+--- !u!212 &21211892
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 118656}
+  m_GameObject: {fileID: 172086}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -363,37 +317,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5ad5c09ee049457479fff39d525e86d2, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
---- !u!212 &21237608
-SpriteRenderer:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 114462}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 0
-  m_ReflectionProbeUsage: 0
-  m_ProbeAnchor: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e3008d7b3821208489f0cf24e1d7883a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fff94358a0a328747b6a978faea02440, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

@@ -230,9 +230,6 @@ namespace Utils
 		/// <returns></returns>
 		private bool IsOnPoint()
 		{
-			if (GameObject.Find(TargetPoint.name) != null)
-				Debug.Log(TargetPoint.name);
-
             if (targetPoint != null && GameObject.Find(TargetPoint.name) != null)
 			{
 				Vector3 point = Camera.main.ScreenToWorldPoint(transform.position);
