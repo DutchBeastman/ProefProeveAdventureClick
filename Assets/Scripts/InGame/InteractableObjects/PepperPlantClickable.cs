@@ -6,7 +6,7 @@ public class PepperPlantClickable : ClickableItem {
 	
 	protected override void OnClick()
 	{
-		Debug.Log("i am clicked");
+
 	}
 	protected override void OnClickRelease()
 	{
