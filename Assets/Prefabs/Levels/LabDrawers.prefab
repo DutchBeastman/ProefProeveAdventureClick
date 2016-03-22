@@ -383,6 +383,7 @@ GameObject:
   - 61: {fileID: 6117546}
   - 114: {fileID: 11412750}
   - 114: {fileID: 11481228}
+  - 114: {fileID: 11455230}
   m_Layer: 0
   m_Name: BackButton
   m_TagString: Untagged
@@ -2127,6 +2128,22 @@ MonoBehaviour:
   target: {fileID: 483952, guid: 66b1d5ceb3db42746ad86bb35c40b553, type: 2}
   usableObject: PharmacyDrawer
   finishedGameObject: {fileID: 0}
+  showableItemImage: {fileID: 0}
+  clickableItem: 0
+  itemImage: {fileID: 0}
+  shouldNotAdd: 0
+--- !u!114 &11455230
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 160028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 0
 --- !u!114 &11461160
 MonoBehaviour:
   m_ObjectHideFlags: 1

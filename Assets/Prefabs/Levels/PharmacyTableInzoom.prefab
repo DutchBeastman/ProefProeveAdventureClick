@@ -31,6 +31,7 @@ GameObject:
   - 212: {fileID: 21211892}
   - 61: {fileID: 6182130}
   - 114: {fileID: 11493618}
+  - 114: {fileID: 11408788}
   m_Layer: 0
   m_Name: RecipePieceOne
   m_TagString: Untagged
@@ -194,6 +195,18 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &11408788
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 172086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
 --- !u!114 &11413268
 MonoBehaviour:
   m_ObjectHideFlags: 1

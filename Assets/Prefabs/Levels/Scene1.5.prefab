@@ -31,6 +31,7 @@ GameObject:
   - 212: {fileID: 21269660}
   - 61: {fileID: 6188590}
   - 114: {fileID: 11428540}
+  - 114: {fileID: 11413868}
   m_Layer: 0
   m_Name: RecipePieceOne
   m_TagString: Untagged
@@ -49,6 +50,7 @@ GameObject:
   - 212: {fileID: 21267700}
   - 114: {fileID: 11451788}
   - 61: {fileID: 6145500}
+  - 114: {fileID: 11401468}
   m_Layer: 0
   m_Name: Garlic
   m_TagString: Untagged
@@ -98,6 +100,7 @@ GameObject:
   - 212: {fileID: 21244776}
   - 114: {fileID: 11467908}
   - 61: {fileID: 6140260}
+  - 114: {fileID: 11425182}
   m_Layer: 0
   m_Name: Mint
   m_TagString: Untagged
@@ -116,6 +119,7 @@ GameObject:
   - 212: {fileID: 21223966}
   - 114: {fileID: 11490162}
   - 61: {fileID: 6145678}
+  - 114: {fileID: 11430948}
   m_Layer: 0
   m_Name: Salt
   m_TagString: Untagged
@@ -283,6 +287,18 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
+--- !u!114 &11401468
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
 --- !u!114 &11406104
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -299,6 +315,30 @@ MonoBehaviour:
   manager: {fileID: 0}
   id: 5
   fade: {fileID: 0}
+--- !u!114 &11413868
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 151910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
+--- !u!114 &11425182
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 180124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 3
 --- !u!114 &11428540
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,6 +363,18 @@ MonoBehaviour:
   clickableItem: 0
   itemImage: {fileID: 0}
   shouldNotAdd: 0
+--- !u!114 &11430948
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185390}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78452be51585082439977958f9b6fabe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursor: 2
 --- !u!114 &11451788
 MonoBehaviour:
   m_ObjectHideFlags: 1
