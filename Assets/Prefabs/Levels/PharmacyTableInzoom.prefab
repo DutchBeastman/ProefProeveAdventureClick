@@ -69,7 +69,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &182016
 GameObject:
   m_ObjectHideFlags: 0
@@ -141,8 +141,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 123224}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.088, y: -0.555, z: 0}
-  m_LocalScale: {x: 4.9571214, y: 2.0215285, z: 1}
+  m_LocalPosition: {x: 0, y: -0.555, z: 0}
+  m_LocalScale: {x: 10, y: 2.0215285, z: 1}
   m_Children: []
   m_Father: {fileID: 445496}
   m_RootOrder: 1
@@ -153,8 +153,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 197908}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0099999, y: -0.0099999, z: 0}
-  m_LocalScale: {x: 0.050139803, y: 0.047082428, z: 1}
+  m_LocalPosition: {x: 0.001, y: 0.019, z: 0}
+  m_LocalScale: {x: 0.14272875, y: 0.17949577, z: 1}
   m_Children: []
   m_Father: {fileID: 445496}
   m_RootOrder: 0
@@ -223,7 +223,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Size: {x: 0.16, y: 0.16}
+  m_Size: {x: 0.3, y: 0.17}
 --- !u!95 &9535414
 Animator:
   serializedVersion: 3
@@ -263,6 +263,8 @@ MonoBehaviour:
   finishedGameObject: {fileID: 114462}
   showableItemImage: {fileID: 21300000, guid: 316eea52fbe13ef4d9ffd206f02c75f6, type: 3}
   clickableItem: 1
+  itemImage: {fileID: 0}
+  shouldNotAdd: 0
 --- !u!114 &11413268
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -303,8 +305,9 @@ MonoBehaviour:
   clickArea: {fileID: 6139886}
   isUIElement: 0
   objectText: I should find the key to open this drawer
+  shouldNotShowDialogue: 0
   itemToActivate: {fileID: 118656}
-  imageAfterActivation: {fileID: 21300000, guid: 174bfdeb6c11aa042bf3dc31d22909e3,
+  imageAfterActivation: {fileID: 21300000, guid: ac69f3fda4053804aa9055eff5f245c4,
     type: 3}
 --- !u!114 &11492782
 MonoBehaviour:
@@ -450,7 +453,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -2057039461
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e22ae7c603e64574aaebb44c5d559476, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 438291b1b055e764d8d5da3a7a1a8f39, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
