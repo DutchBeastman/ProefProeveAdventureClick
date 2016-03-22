@@ -6,11 +6,25 @@ public class StartBehaviour : MonoBehaviour {
 
 
 	[SerializeField]private string[] StartDialogueTexts;
+	[SerializeField]private Sprite letterImage;
+	private bool imageIsActive;
+	private bool continueText;
 	private int textNumber;
 
 	private void OnEnable()
 	{
-		
+		GlobalEvents.AddListener<ShowImageEvent>(OnImageEvent);
+	}
+	private void OnDisable()
+	{
+		GlobalEvents.RemoveListener<ShowImageEvent>(OnImageEvent);
+	}
+	private void OnImageEvent(ShowImageEvent evt)
+	{
+		if(evt.shouldClose)
+		{
+			imageIsActive = false;
+		}
 	}
 	private void Start()
 	{
@@ -27,6 +41,7 @@ public class StartBehaviour : MonoBehaviour {
 		{
 			PlayerPrefs.DeleteAll();
 		}
+		//Debug.Log(textNumber);
 	}
 
 	/// <summary>
@@ -34,6 +49,21 @@ public class StartBehaviour : MonoBehaviour {
 	/// </summary>
 	void Sendtext()
 	{
+		if(textNumber == 3)
+		{
+			GlobalEvents.Invoke(new PauzeEvent("resume"));
+			GlobalEvents.Invoke(new ShowImageEvent(letterImage));
+			imageIsActive = true;
+			continueText = true;
+		}
+		if(continueText)
+		{
+			Invoke("Sendtext", 2f);
+			textNumber++;
+			continueText = false;
+			Debug.Log(textNumber);
+			return;
+		}
 		GlobalEvents.Invoke(new DialogueEvent(StartDialogueTexts[textNumber]));
 		if(textNumber != StartDialogueTexts.Length -1)
 		{

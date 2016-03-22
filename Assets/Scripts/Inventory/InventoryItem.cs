@@ -159,7 +159,6 @@ namespace Utils
 			{
 				if (ItemName == "Key")
 				{
-					Debug.Log("TRIGGERED");
 					GameObject.Find(uiUsableObject).GetComponent<InteractableObject>().DoOnItemUsed();
 					OnClickRelease();
 					inventory.RemoveInventoryItem(ItemId);
@@ -168,14 +167,14 @@ namespace Utils
 				if (ItemName != "Scissor")
 				{
 					OnClickRelease();
-					inventory.RemoveInventoryItem(ItemId);
 					GlobalEvents.Invoke(new AddItemToMixerEvent(ThisClickableItem));
+					inventory.RemoveInventoryItem(ItemId);
+					
 				}
 				else
 				{
 					OnClickRelease();
 					inventory.RemoveInventoryItem(ItemId);
-					Debug.Log("fireCut");
 					GlobalEvents.Invoke(new CutPlantEvent());
 				}
 			
@@ -196,7 +195,6 @@ namespace Utils
 		/// </summary>
 		public void OnItemsSet()
 		{
-			Debug.Log("ay");
 			GetComponent<Image>().sprite = ItemImage;
 			IsActive = true;
 			isUsable = false;
