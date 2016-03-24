@@ -222,7 +222,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemsInMixer: []
   itemsNeededForMix:
-  - {fileID: 11404206, guid: 393967274897a3442a80abfe4697a7ed, type: 2}
+  - {fileID: 11406626, guid: 6f661f4a23fd98b4889c1af7fb95e66f, type: 2}
+  - {fileID: 11490162, guid: 15511c809e98d394aa241d5a85d910cf, type: 2}
+  - {fileID: 11451788, guid: 15511c809e98d394aa241d5a85d910cf, type: 2}
+  - {fileID: 11464730, guid: 4c0ced6fd179bd04c92c43292082c117, type: 2}
+  - {fileID: 11444894, guid: 4c0ced6fd179bd04c92c43292082c117, type: 2}
+  - {fileID: 11467072, guid: 50326e3ffa6ae98418d133e6d8fbd793, type: 2}
+  - {fileID: 11416910, guid: 6f661f4a23fd98b4889c1af7fb95e66f, type: 2}
+  - {fileID: 11450880, guid: 6f661f4a23fd98b4889c1af7fb95e66f, type: 2}
+  - {fileID: 11467908, guid: 15511c809e98d394aa241d5a85d910cf, type: 2}
+  - {fileID: 11433490, guid: 4c0ced6fd179bd04c92c43292082c117, type: 2}
+  - {fileID: 11427832, guid: 6f661f4a23fd98b4889c1af7fb95e66f, type: 2}
   - {fileID: 11401830, guid: 4c0ced6fd179bd04c92c43292082c117, type: 2}
   interactableScript: {fileID: 0}
 --- !u!212 &21203390
@@ -321,7 +331,66 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.size
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[0]
+      value: 
+      objectReference: {fileID: 11406626, guid: 6f661f4a23fd98b4889c1af7fb95e66f,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[1]
+      value: 
+      objectReference: {fileID: 11490162, guid: 15511c809e98d394aa241d5a85d910cf,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[3]
+      value: 
+      objectReference: {fileID: 11464730, guid: 4c0ced6fd179bd04c92c43292082c117,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[5]
+      value: 
+      objectReference: {fileID: 11467072, guid: 50326e3ffa6ae98418d133e6d8fbd793,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[4]
+      value: 
+      objectReference: {fileID: 11444894, guid: 4c0ced6fd179bd04c92c43292082c117,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[2]
+      value: 
+      objectReference: {fileID: 11451788, guid: 15511c809e98d394aa241d5a85d910cf,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[6]
+      value: 
+      objectReference: {fileID: 11416910, guid: 6f661f4a23fd98b4889c1af7fb95e66f,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[7]
+      value: 
+      objectReference: {fileID: 11450880, guid: 6f661f4a23fd98b4889c1af7fb95e66f,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[8]
+      value: 
+      objectReference: {fileID: 11467908, guid: 15511c809e98d394aa241d5a85d910cf,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[9]
+      value: 
+      objectReference: {fileID: 11433490, guid: 4c0ced6fd179bd04c92c43292082c117,
+        type: 2}
+    - target: {fileID: 0}
+      propertyPath: itemsNeededForMix.Array.data[11]
+      value: 
+      objectReference: {fileID: 11401830, guid: 4c0ced6fd179bd04c92c43292082c117,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 159580}

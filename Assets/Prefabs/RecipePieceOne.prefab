@@ -58,7 +58,7 @@ MonoBehaviour:
   clickArea: {fileID: 0}
   isUIElement: 0
   inventory: {fileID: 0}
-  itemName: 
+  itemName: Recipe
   itemId: 0
   numberOfUsages: 0
   target: {fileID: 0}
@@ -104,7 +104,11 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: itemName
+      value: Recipe
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 178040}
