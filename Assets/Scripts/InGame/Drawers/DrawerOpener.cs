@@ -3,8 +3,8 @@ using System.Collections;
 using Utils;
 
 public class DrawerOpener : Click {
-	[SerializeField]
-	private Sprite closedDrawer;
+	//[SerializeField]
+	//private Sprite closedDrawer;
 	[SerializeField]
 	private Sprite openDrawer;
 
@@ -28,11 +28,13 @@ public class DrawerOpener : Click {
 		base.Update();
 		if (isClosed)
 		{
-			spriteRend.sprite = closedDrawer;;
+			//spriteRend.sprite = closedDrawer;;
+			spriteRend.enabled = false;
 		}
 		else if(!isClosed)
 		{
 			spriteRend.sprite = openDrawer;
+			spriteRend.enabled = true;
 		}
 	}
 
@@ -41,7 +43,7 @@ public class DrawerOpener : Click {
         base.Awake();
         isClosed = true;
         spriteRend = gameObject.GetComponent<SpriteRenderer>();
-        spriteRend.sprite = closedDrawer;
+		spriteRend.enabled = false;
     }
     protected override void OnClick()
 	{
@@ -49,10 +51,11 @@ public class DrawerOpener : Click {
         if (isClosed)
         {
             spriteRend.sprite = openDrawer;
+			spriteRend.enabled = true;
             isClosed = false;
         }else if (!isClosed)
         {
-            spriteRend.sprite = closedDrawer;
+			spriteRend.enabled = false;
             isClosed = true;
         }
 	}
